@@ -516,7 +516,7 @@
    background: rgba(217, 217, 217, 0.2);
     border: 0.5px solid #DADADA;
     border-radius: 10px;
-    margin-bottom:10px;
+    margin: 10px;
  }
  .sec:first-child{
    margin-top: 30px;
@@ -551,7 +551,7 @@
    font-family: 'Dubai';
    font-weight: 400;
    font-size: 15px;
-   line-height: 25px;
+   line-height: 5px;
    text-transform: capitalize;
    color: #838383;
  }
@@ -568,6 +568,7 @@
    align-items: end;
    padding: 10px 20px;
    border-radius: 15px;
+   height: 141px;
  }
  .box-design .box-img img{
    width: 100px;
