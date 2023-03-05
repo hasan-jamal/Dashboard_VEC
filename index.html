@@ -25,7 +25,6 @@
     <div class="s-layout">
         <!-- Sidebar -->
         <div class="s-layout__sidebar">
-          
           <a class="s-sidebar__trigger" onclick="openSidebar()" id="sidebar__trigger">
              <i class="fa fa-bars"></i>
           </a>
@@ -365,9 +364,9 @@
                            <td>Dubai</td>
                            <td>Khalifa street</td>
                            <td>Approved</td>
-                           <td>
+                           <td  class="td-actions">
                               <img src="./images/lock.svg" alt="lock">
-                              <img src="./images/delete.svg" alt="delete">
+                              <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
                               <img src="./images/eye.svg" alt="show">
                            </td>
                         </tr>
@@ -381,9 +380,9 @@
                            <td>Dubai</td>
                            <td>Khalifa street</td>
                            <td>Approved</td>
-                           <td>
+                           <td class="td-actions">
                               <img src="./images/lock.svg" alt="lock">
-                              <img src="./images/delete.svg" alt="delete">
+                              <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
                               <img src="./images/eye.svg" alt="show">
                            </td>
                         </tr>
@@ -397,9 +396,9 @@
                            <td>Dubai</td>
                            <td>Khalifa street</td>
                            <td>Approved</td>
-                           <td>
+                           <td class="td-actions">
                               <img src="./images/lock.svg" alt="lock">
-                              <img src="./images/delete.svg" alt="delete">
+                              <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
                               <img src="./images/eye.svg" alt="show">
                            </td>
                         </tr>
@@ -413,10 +412,10 @@
                            <td>Dubai</td>
                            <td>Khalifa street</td>
                            <td>Approved</td>
-                           <td>
-                               <a href="#"><img src="./images/lock.svg" alt="lock"></a>
-                               <a href=""><img src="./images/delete.svg" alt="delete"></a> 
-                               <a href=""><img src="./images/eye.svg" alt="show"></a>
+                           <td class="td-actions">
+                              <img src="./images/lock.svg" alt="lock">
+                               <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
+                               <img src="./images/eye.svg" alt="show">
                            </td>
                         </tr>
                         <tr>
@@ -429,10 +428,10 @@
                            <td>Dubai</td>
                            <td>Khalifa street</td>
                            <td>Approved</td>
-                           <td>
-                               <a href="#"><img src="./images/lock.svg" alt="lock"></a>
-                               <a href=""><img src="./images/delete.svg" alt="delete"></a> 
-                               <a href=""><img src="./images/eye.svg" alt="show"></a>
+                           <td class="td-actions">
+                              <img src="./images/lock.svg" alt="lock">
+                               <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
+                               <img src="./images/eye.svg" alt="show">
                            </td>
                         </tr>
                        </tbody>
@@ -515,6 +514,27 @@
          </div>
          </div>
       </div>
+
+         <!-- Modal Agenda -->
+         <div class="modal fade modal-delete" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body pt-0">
+                  <img src="./images/Delete.gif" alt="Delete">
+                  <h5>Delete</h5>
+                  <p>Are you sure to delete the volunteer?</p>
+               </div>
+               <div class="modal-footer justify-content-center pt-0">
+                  <button type="button" class="btn-delete" data-bs-dismiss="modal">Delete</button>
+                  <button type="button"  class="btn-hide" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            
+            </div>
+            </div>
+         </div>
     
     <!-- Font Awesome Light JS  5.12-->
     <script src="../icons/all.min.js"></script>
