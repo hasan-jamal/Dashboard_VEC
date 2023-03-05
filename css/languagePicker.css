@@ -15,6 +15,10 @@ list-style:none;
 p{
     margin-bottom: 0px;
 }
+ol, ul{
+    padding-left: 0px;
+    margin-bottom: 0rem;
+}
 :root,
 [data-theme=default] {
     --color-primary-darker: hsl(220, 90%, 36%);

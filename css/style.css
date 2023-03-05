@@ -46,27 +46,31 @@
  .s-sidebar__trigger {
     z-index: 2;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 30px;
+    right: 0;
+    width: 100px;
     height: 4em;
  }
  
- .s-sidebar__trigger > i {
-    display: inline-block;
-    margin: 1.5em 0 0 1.5em;
-    color: #f07ab0;
+ .s-sidebar__trigger .svg-inline--fa{
+   font-size: 25pt;
+   padding-bottom: 10px;
+   color: black !important;
+   font-weight: bold;
+   margin-right: 40px;
+   margin-left: 10px;
  }
- 
  .s-sidebar__nav {
     position: fixed;
+    z-index: 1000;
     top: 0;
     left: -260px;
-    overflow: hidden;
+    overflow: auto;
     transition: all .3s ease-in;
     width: 260px;
     background: #FFFFFF;
-    height: 100%;
+    height: 100vh;
+    
     color: rgba(255, 255, 255, 0.7);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
  }
@@ -80,7 +84,7 @@
  
  .s-sidebar__nav ul {
     position: absolute;
-    top: 4em;
+    top: 3em;
     left: 0;
     margin: 0;
     padding: 0;
@@ -156,6 +160,12 @@
    line-height: 27px;
    color: rgba(0, 0, 0, 0.6);
    padding-top: 5px;
+ }
+ .li-setting{
+   margin-top: 120px;
+ }
+ .li-dash a span{
+   color: #000000;
  }
  .s-sidebar__nav .active{
    border-left: 4px solid #B68934;
@@ -315,6 +325,39 @@
    background: #28C76F;
    border: 2px solid #fff;
 }
+@media (max-width:1000px) {
+   .header-nav{
+      padding-bottom: 5px;
+      height: 100%;
+   }
+   .header-nav-section-two{
+      width: 100%;
+   }
+   .style-user{
+         flex-direction: column;
+   }
+   .style-user .text-user{
+      order: 2;
+   }
+   .style-user .point-color{
+      top: 10px;
+      bottom: auto;
+      right:10px;
+   }
+   .style-user .img-user{
+      margin-left: 0px;
+   }
+   .style-user .text-user h5{
+      font-size: 12px;
+      margin-bottom: 0px;
+   }
+   .style-user .text-user p{
+      text-align: center;
+   }
+   .header-nav-text h4{
+      margin-bottom: 0px;
+   }
+}
 /* notification Code */
 .notification{
 
@@ -352,7 +395,7 @@
    cursor: pointer
  }
  
- .svg-inline--fa{
+ .notification .svg-inline--fa{
    font-size: 25pt;
    padding-bottom: 10px;
    color: black !important;
@@ -539,21 +582,43 @@
  .color-4{
    background: #F4CE9B;
  }
-
+@media (max-width:1000px) {
+   .boxs .container-padding{
+      padding: 10px;
+   }
+   .box-design .box-img img{
+      width: 100%;
+   }
+   .box-design{
+      height: 150px;
+      margin-bottom: 10px;
+   }
+   .box-img{
+      display: none;
+   }
+   .box-texts h1{
+      font-size: 20px;
+   }
+   .box-texts p{
+      font-size: 12px;
+   }
+}
 
  .many-feature .container-padding{
    padding: 20px 40px;
  }
  .many-feature .container-padding .many-feature-flex1{
    padding: 15px;
-   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ 
    background: #FFFFFF;
    border-radius: 15px;
  }
 .scrollbar
 {
+   box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
    height: 300px;
    overflow-y: scroll;
+   border-radius: 15px;
 }
 .force-overflow
 {
@@ -640,6 +705,7 @@
  .many-feature-flex1 .flex-boxs-users a{
    display: flex;
    align-items: center;
+   cursor: pointer;
  }
  .many-feature-flex1 .flex-boxs-users a img{
    width: 15px;
@@ -666,6 +732,11 @@
    letter-spacing: -0.02em;
    text-decoration-line: underline;
    color: #FFFFFF;
+ }
+ @media (max-width:1000px) {
+   .many-feature .container-padding{
+      padding: 10px;
+   }
  }
  .event-sec-texts h1{
    font-family: 'Dubai Bold';
@@ -728,13 +799,150 @@
    color: #2E2E2E;
  }
  .home-table .home-table-data .home-table-list table td{
-   font-family: 'Dubai';
+   font-family: 'Dubai ';
    font-weight: 400;
    font-size: 15px;
    line-height: 16px;
    color: #000000;
  }
+.home-table-list table td{
+   padding-top: 15px ;
+ }
+ .home-table-list table tr:last-child{
+   border-bottom: 1px solid #fff !important;
+ }
  .home-table .home-table-data .home-table-list table .td-user img{
    width: 30.18px;
    height: 30px;
  }
+.chart-design{
+   background: #FFFFFF;
+   padding: 15px;
+   border-radius: 15px;
+   box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+}
+.chart-design h1{
+   font-family: 'Dubai';
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 22px;
+   color: #5E5873;
+   padding-left: 20px;
+}
+.s-sidebar__nav button svg{
+   color:rgb(197, 2, 2);
+   font-size: 30px;
+   text-align: right;
+}
+.s-sidebar__nav button{
+   margin-top: 10px;
+   text-align: right;
+   display: none;
+   margin-left: auto;
+   margin-right: 30px;
+   border: none;
+   background: #fff;
+}
+.modal-agenda .flex-agenda{
+   display: flex;
+}
+.modal-agenda .flex-agenda p{
+   font-family: 'Dubai';
+   font-weight: 500;
+   font-size: 10px;
+   line-height: 17px;
+   letter-spacing: -0.333333px;
+   color: #000000;
+   margin: 0 4px;
+}
+.modal-agenda .modal-title{
+   padding-left: 30px;
+   font-family: 'Dubai';
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 34px;
+   letter-spacing: -0.333333px;
+   color: #000000;
+}
+.modal-agenda .btn-close{
+   position: absolute;
+   top: 20px;
+   left: 10px ;
+
+ }
+ .modal-agenda .modal-header{
+   align-items: start !important;
+   border-bottom: none;
+ }
+ .modal-agenda .modal-body-agenda .p-header{
+   font-family: 'Dubai';
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 27px;
+   letter-spacing: -0.333333px;
+   color: rgba(0, 0, 0, 0.4);
+ }
+ .modal-agenda .modal-body-agenda h3{
+   font-family: 'Dubai';
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 34px;
+   letter-spacing: -0.333333px;
+   color: #000000;
+ }
+ .modal-agenda .modal-body-agenda .card-agenda{
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+ }
+ .modal-agenda .modal-body-agenda .card-agenda h4{
+   font-family: 'Dubai';
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 27px;
+   letter-spacing: -0.333333px;
+   color: #000000;
+ }
+ .modal-agenda .modal-body-agenda .card-agenda .flex-card-agenda{
+   display: flex;
+   align-items: center;
+ }
+ .modal-agenda .modal-body-agenda .card-agenda p{
+   font-family: 'Dubai';
+   font-weight: 400;
+   font-size: 10px;
+   line-height: 17px;
+   letter-spacing: -0.333333px;
+   color: #858585;
+   margin: 0 5px;
+ }
+ .modal-agenda .modal-body-agenda .card-agenda .photo-user img{
+   border-radius: 10px;
+   width: 63px;
+   height: 62px;
+   margin-right: 10px;
+ }
+ @media (min-width: 576px){
+.modal-dialog {
+    max-width: 600px !important;
+}}
+@media (max-width:1000px) {
+   .chart-design{
+      margin-bottom: 20px;
+   }
+   .scrollbar{
+      margin-bottom: 30px;
+   }
+   .home-table .container-padding{
+      padding: 10px;
+   }
+   .many-feature .event-sec{
+      border-radius: 15px;
+   }
+   .s-sidebar__nav button{
+      display: block;
+   }
+   .modal-agenda .modal-header{
+      flex-direction: column;
+   }
+}

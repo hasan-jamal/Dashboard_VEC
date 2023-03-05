@@ -26,10 +26,13 @@
         <!-- Sidebar -->
         <div class="s-layout__sidebar">
           
-          <a class="s-sidebar__trigger" href="#0">
+          <a class="s-sidebar__trigger" onclick="openSidebar()" id="sidebar__trigger">
              <i class="fa fa-bars"></i>
           </a>
-          <nav class="s-sidebar__nav">
+          <nav class="s-sidebar__nav" id="sidebar-nav">
+            <button id="btnClose" onclick="closeSidebar()">
+               <i class="fal fa-times"></i>
+            </button>
              <ul>
                 <li>
                     <div class="search-nav">
@@ -79,7 +82,20 @@
                          <span>Reports</span>
                     </a>
                  </li>
+                 <li class="li-dash li-setting">
+                        <a class="s-sidebar__nav-link" href="#0">
+                           <img src="./images/setting.svg" alt="setting">
+                           <span>Settings</span>
+                     </a>
+                 </li>
+                 <li class="li-dash">
+                     <a class="s-sidebar__nav-link" href="#0">
+                        <img src="./images/logout.svg" alt="logout">
+                        <span>Log out</span>
+                       </a>
+                  </li>
              </ul>
+            
           </nav>
         
         </div>
@@ -179,7 +195,7 @@
             <section class="boxs">
                <div class="container-padding">
                   <div class="row">
-                     <div class="col-md-3">
+                     <div class="col-md-3 col-6">
                         <div class="box-design color-1">
                            <div class="box-texts ">
                               <h1>Volunteer</h1>
@@ -191,7 +207,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-md-3">
+                     <div class="col-md-3 col-6">
                         <div class="box-design color-2">
                            <div class="box-texts ">
                               <h1>Event</h1>
@@ -203,7 +219,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-md-3">
+                     <div class="col-md-3 col-6">
                         <div class="box-design color-3">
                            <div class="box-texts ">
                               <h1>Agenda</h1>
@@ -215,7 +231,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-md-3">
+                     <div class="col-md-3 col-6">
                         <div class="box-design color-4">
                            <div class="box-texts ">
                               <h1>Employees</h1>
@@ -234,7 +250,11 @@
                <div class="container-padding">
                   <div class="row">
                      <div class="col-md-6">
-
+                        <div class="chart-design">
+                           <h1>Volunteer requests</h1>
+                           <canvas id="chart" width="100" height="50"></canvas>
+                        </div>
+                      
                      </div>
                      <div class="col-md-3">
                         <div class="scrollbar" id="style-1">
@@ -250,7 +270,8 @@
                                  </p>
                                  <div class="flex-boxs-users mt-2">
                                     <h5>09:00am</h5>
-                                    <a href="">
+                                    <!-- Button trigger modal -->
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal">
                                        <img src="./images/user1.svg" alt="user">
                                        <img src="./images/user2.svg" alt="user">
                                        <img src="./images/user3.svg" alt="user">
@@ -265,7 +286,8 @@
                                  </p>
                                  <div class="flex-boxs-users mt-2">
                                     <h5>09:00am</h5>
-                                    <a href="">
+                                      <!-- Button trigger modal -->
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal">
                                        <img src="./images/user1.svg" alt="user">
                                        <img src="./images/user2.svg" alt="user">
                                        <img src="./images/user3.svg" alt="user">
@@ -280,7 +302,8 @@
                                  </p>
                                  <div class="flex-boxs-users mt-2">
                                     <h5>09:00am</h5>
-                                    <a href="">
+                                      <!-- Button trigger modal -->
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal">
                                        <img src="./images/user1.svg" alt="user">
                                        <img src="./images/user2.svg" alt="user">
                                        <img src="./images/user3.svg" alt="user">
@@ -396,6 +419,22 @@
                                <a href=""><img src="./images/eye.svg" alt="show"></a>
                            </td>
                         </tr>
+                        <tr>
+                           <td> 05</td>
+                           <td class="td-user">
+                              <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                           </td>
+                           <td>Rossie52@yahoo.com</td>
+                           <td>503-254-9294</td>
+                           <td>Dubai</td>
+                           <td>Khalifa street</td>
+                           <td>Approved</td>
+                           <td>
+                               <a href="#"><img src="./images/lock.svg" alt="lock"></a>
+                               <a href=""><img src="./images/delete.svg" alt="delete"></a> 
+                               <a href=""><img src="./images/eye.svg" alt="show"></a>
+                           </td>
+                        </tr>
                        </tbody>
                      </table>
                   </div>
@@ -407,11 +446,90 @@
 
 </div>
 
+
+   
+      
+      <!-- Modal Agenda -->
+      <div class="modal fade modal-agenda" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">District Optimization Director</h5>
+               <div class="flex-agenda">
+                  <p><img src="./images/calenderAgenda.svg" alt="date"> May 5 _ 7</p>
+                  <p><img src="./images/clock.svg" alt="time"> 7:30 am - 3:30 pm</p>
+            </div>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body pt-0">
+               <div class="modal-body-agenda">
+                  <p class="p-header">Delectus et dolorum ut nostrum. Dolores neque ipsum iure consequuntur reiciendis et. Laudantium ut consequatur ..</p>
+                  <h3>Employees :</h3>
+                  <div class="row">
+                    <div class="col-md-6">
+                       <div class="card-agenda">
+                          <div class="photo-user">
+                                <img src="./images/photoAgenda.png" alt="">
+                          </div>
+                          <div class="card-agenda-text">
+                              <h4>Antonio Vandervort</h4>
+                              <div class="flex-card-agenda">
+                                <p><img src="./images/at-sign.svg" alt="@"> info@imshsh.com </p>
+                                <p><img src="./images/phone-call.svg" alt="phone"> 519-402-5208</p>
+                              </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                     <div class="card-agenda">
+                        <div class="photo-user">
+                              <img src="./images/photoAgenda.png" alt="">
+                        </div>
+                        <div class="card-agenda-text">
+                            <h4>Antonio Vandervort</h4>
+                            <div class="flex-card-agenda">
+                              <p><img src="./images/at-sign.svg" alt="@"> info@imshsh.com </p>
+                              <p><img src="./images/phone-call.svg" alt="phone"> 519-402-5208</p>
+                            </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="card-agenda">
+                        <div class="photo-user">
+                              <img src="./images/photoAgenda.png" alt="">
+                        </div>
+                        <div class="card-agenda-text">
+                            <h4>Antonio Vandervort</h4>
+                            <div class="flex-card-agenda">
+                              <p><img src="./images/at-sign.svg" alt="@"> info@imshsh.com </p>
+                              <p><img src="./images/phone-call.svg" alt="phone"> 519-402-5208</p>
+                            </div>
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+               </div>
+            </div>
+         
+         </div>
+         </div>
+      </div>
     
     <!-- Font Awesome Light JS  5.12-->
     <script src="../icons/all.min.js"></script>
     <script src="../icons/light.min.js"></script>
    <!---Language Picker JS-->
    <script src="../js/dropdown_lang.js"></script>
+   <!---Chart JS-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+   <script src="./js/chart.js"></script>
+   <!---Close and Open Sidebar in mobile-->
+   <script src="./js/sidebar.js"></script>
+   <!---Boostrap  5 JS-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
