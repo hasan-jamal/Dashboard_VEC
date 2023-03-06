@@ -8,9 +8,9 @@
     <title>VEC Dashboard</title>
     <link rel="icon" href="">
     <!--Style CSS-->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/identity.css">
-    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/volunteer.css">
     <!--Bootstrap 5-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -40,53 +40,53 @@
                     </div>
                 </li>
                 <li>
-                   <a class="s-sidebar__nav-link active" href="#0">
-                    <img src="./images/home2.svg" alt="Dashboard" >
-                      <span>Dashboard</span>
+                  <a class="s-sidebar__nav-link active" href="./index.html">
+                   <img src="./images/home2.svg" alt="Dashboard" >
+                     <span>Dashboard</span>
+                  </a>
+               </li>
+               <li>
+                  <a class="s-sidebar__nav-link" href="./Volunteer.html">
+                   <img src="./images/Volunteer.svg" alt="Volunteer">
+                   <span>Volunteer</span>
+                  </a>
+               </li>
+               <li>
+                  <a class="s-sidebar__nav-link" href="./Agenda.html">
+                      <img src="./images/Agenda.svg" alt="Agenda">
+                       <span>Agenda</span>
+                  </a>
+               </li>
+               <li>
+                   <a class="s-sidebar__nav-link" href="./Event.html">
+                       <img src="./images/Event.svg" alt="Event">
+                       <span>Event</span>
                    </a>
                 </li>
                 <li>
-                   <a class="s-sidebar__nav-link" href="#0">
-                    <img src="./images/Volunteer.svg" alt="Volunteer">
-                    <span>Volunteer</span>
+                   <a class="s-sidebar__nav-link" href="./Employees.html">
+                       <img src="./images/Employees.svg" alt="Employees">
+                        <span>Employees</span>
                    </a>
                 </li>
                 <li>
-                   <a class="s-sidebar__nav-link" href="#0">
-                       <img src="./images/Agenda.svg" alt="Agenda">
-                        <span>Agenda</span>
+                   <a class="s-sidebar__nav-link" href="./Guests.html">
+                        <img src="./images/Guests.svg" alt="Guests">
+                        <span>Guests</span>
                    </a>
                 </li>
                 <li>
-                    <a class="s-sidebar__nav-link" href="#0">
-                        <img src="./images/Event.svg" alt="Event">
-                        <span>Event</span>
+                   <a class="s-sidebar__nav-link" href="./Reports.html">
+                        <img src="./images/Reports.svg" alt="Reports">
+                        <span>Reports</span>
+                   </a>
+                </li>
+                <li class="li-dash li-setting">
+                       <a class="s-sidebar__nav-link" href="./Settings.html">
+                          <img src="./images/setting.svg" alt="setting">
+                          <span>Settings</span>
                     </a>
-                 </li>
-                 <li>
-                    <a class="s-sidebar__nav-link" href="#0">
-                        <img src="./images/Employees.svg" alt="Employees">
-                         <span>Employees</span>
-                    </a>
-                 </li>
-                 <li>
-                    <a class="s-sidebar__nav-link" href="#0">
-                         <img src="./images/Guests.svg" alt="Guests">
-                         <span>Guests</span>
-                    </a>
-                 </li>
-                 <li>
-                    <a class="s-sidebar__nav-link" href="#0">
-                         <img src="./images/Reports.svg" alt="Reports">
-                         <span>Reports</span>
-                    </a>
-                 </li>
-                 <li class="li-dash li-setting">
-                        <a class="s-sidebar__nav-link" href="#0">
-                           <img src="./images/setting.svg" alt="setting">
-                           <span>Settings</span>
-                     </a>
-                 </li>
+                </li>
                  <li class="li-dash">
                      <a class="s-sidebar__nav-link" href="#0">
                         <img src="./images/logout.svg" alt="logout">
@@ -191,255 +191,38 @@
                   </div>
                </div>
             </section>
-            <section class="boxs">
+            <section class="section-volunteer">
                <div class="container-padding">
-                  <div class="row">
-                     <div class="col-md-3 col-6">
-                        <div class="box-design color-1">
-                           <div class="box-texts ">
-                              <h1>Volunteer</h1>
-                              <p>Current Value</p>
-                              <h2>250</h2>
-                           </div>
-                           <div class="box-img">
-                              <img src="./images/VolunteerChart.svg" alt="VolunteerChart">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-3 col-6">
-                        <div class="box-design color-2">
-                           <div class="box-texts ">
-                              <h1>Event</h1>
-                              <p>Current Value</p>
-                              <h2>5</h2>
-                           </div>
-                           <div class="box-img">
-                              <img src="./images/EventChart.svg" alt="VolunteerChart">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-3 col-6">
-                        <div class="box-design color-3">
-                           <div class="box-texts ">
-                              <h1>Agenda</h1>
-                              <p>Current Value</p>
-                              <h2>20</h2>
-                           </div>
-                           <div class="box-img">
-                              <img src="./images/AgendaChart.svg" alt="VolunteerChart">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-3 col-6">
-                        <div class="box-design color-4">
-                           <div class="box-texts ">
-                              <h1>Employees</h1>
-                              <p>Current Value</p>
-                              <h2>25</h2>
-                           </div>
-                           <div class="box-img">
-                              <img src="./images/EmployeesChart.svg" alt="VolunteerChart">
-                           </div>
-                        </div>
-                     </div>
+                  <div class="section-volunteer-header">
+                     <h1>Volunteer List</h1>
+                     <p>
+                        <a class="./index.html"><img src="./images/home2.svg" alt="home2"> Dashboard</a>
+                        <span><i class="fal fa-chevron-right"></i></span>
+                        <a href="" class="a-active">Volunteer</a>
+                     </p>
+                  </div>
+                  <div class="section-volunteer-tabs">
+                     <a href="#Volunteer" data-tab="Volunteer" class="b-nav-tab active">
+                        Volunteer List
+                      </a>
+                      <a href="#Invitations" data-tab="Invitations" class="b-nav-tab">
+                        Invitations 
+                      </a>
+                  </div>
+                  <div class="section-vlounteer-content">
+                   
+                      <div id="Volunteer" class="b-tab active">
+                        Orange tab content
+                      </div>
+                      <div id="Invitations" class="b-tab">
+                        Green tab content
+                      </div>
+                  
                   </div>
                </div>
-            </section>
-            <section class="many-feature">
-               <div class="container-padding">
-                  <div class="row">
-                     <div class="col-md-6">
-                        <div class="chart-design">
-                           <h1>Volunteer requests</h1>
-                           <canvas id="chart" width="100" ></canvas>
-                        </div>
-                      
-                     </div>
-                     <div class="col-md-3">
-                        <div class="scrollbar" id="style-1">
-                           <div class="many-feature-flex1 force-overflow">
-                              <div class="flex-dateTime">
-                                 <h1>15 Februay 2023</h1>
-                                 <a href="">View all Agenda</a>
-                              </div>
-                              <div class="flex-boxs color-1">
-                                 <h1>District Optimization Director</h1>
-                                 <p>
-                                    Delectus et dolorum ut nostrum. Dolores neque ipsum iure consequuntur reiciendis et. 
-                                 </p>
-                                 <div class="flex-boxs-users mt-2">
-                                    <h5>09:00am</h5>
-                                    <!-- Button trigger modal -->
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                       <img src="./images/user1.svg" alt="user">
-                                       <img src="./images/user2.svg" alt="user">
-                                       <img src="./images/user3.svg" alt="user">
 
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="flex-boxs color-2">
-                                 <h1>District Optimization Director</h1>
-                                 <p>
-                                    Delectus et dolorum ut nostrum. Dolores neque ipsum iure consequuntur reiciendis et. 
-                                 </p>
-                                 <div class="flex-boxs-users mt-2">
-                                    <h5>09:00am</h5>
-                                      <!-- Button trigger modal -->
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                       <img src="./images/user1.svg" alt="user">
-                                       <img src="./images/user2.svg" alt="user">
-                                       <img src="./images/user3.svg" alt="user">
-
-                                    </a>
-                                 </div>
-                              </div>
-                              <div class="flex-boxs color-3">
-                                 <h1>District Optimization Director</h1>
-                                 <p>
-                                    Delectus et dolorum ut nostrum. Dolores neque ipsum iure consequuntur reiciendis et. 
-                                 </p>
-                                 <div class="flex-boxs-users mt-2">
-                                    <h5>09:00am</h5>
-                                      <!-- Button trigger modal -->
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                       <img src="./images/user1.svg" alt="user">
-                                       <img src="./images/user2.svg" alt="user">
-                                       <img src="./images/user3.svg" alt="user">
-
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-3">
-                         <div class="event-sec">
-                           <a href="">View all Event</a>
-                           <div class="mt-auto d-block"> 
-                              <div class="event-sec-texts ">
-                                 <h1>Aut saepe pariatur mollitia. </h1>
-                                 <p>Deserunt officiis dolorem aut tempore iusto facilis neque. Aliquid maiores voluptas.</p>   
-                              </div>
-                               <div class="event-sec-dateTime">
-                                   <p class="mx-2"><img src="./images/calendaradd.svg" alt="date"> Jun 27</p>
-                                   <p><img src="./images/location-event.svg" alt="location"> Dubai _ Khalifa Street</p>
-                               </div>
-   
-                           </div>
-                         
-                         </div>
-                     </div>
-                  </div>
-                
-               </div>
             </section>
-            <section class="home-table">
-               <div class="container-padding">
-                  <div class="home-table-data">
-                  <h1>Volunteer List</h1>
-               
-                  <div class="home-table-list">
-                     <table class="table table-borderd table-hover">
-                       <thead>
-                           <tr>
-                              <th> ID</th>
-                              <th>Full name</th>
-                              <th>E-mail</th>
-                              <th>Mobile number</th>
-                              <th>State</th>
-                              <th>Address</th>
-                              <th>Status</th>
-                              <th>Actions</th>
-                           </tr>
-                       </thead>
-                       <tbody>
-                        <tr>
-                           <td> 01</td>
-                           <td class="td-user">
-                              <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                           </td>
-                           <td>Rossie52@yahoo.com</td>
-                           <td>503-254-9294</td>
-                           <td>Dubai</td>
-                           <td>Khalifa street</td>
-                           <td>Approved</td>
-                           <td  class="td-actions">
-                              <img src="./images/lock.svg" alt="lock">
-                              <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                              <img src="./images/eye.svg" alt="show">
-                           </td>
-                        </tr>
-                        <tr>
-                           <td> 02</td>
-                           <td class="td-user">
-                              <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                           </td>
-                           <td>Rossie52@yahoo.com</td>
-                           <td>503-254-9294</td>
-                           <td>Dubai</td>
-                           <td>Khalifa street</td>
-                           <td>Approved</td>
-                           <td class="td-actions">
-                              <img src="./images/lock.svg" alt="lock">
-                              <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                              <img src="./images/eye.svg" alt="show">
-                           </td>
-                        </tr>
-                        <tr>
-                           <td> 03</td>
-                           <td class="td-user">
-                              <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                           </td>
-                           <td>Rossie52@yahoo.com</td>
-                           <td>503-254-9294</td>
-                           <td>Dubai</td>
-                           <td>Khalifa street</td>
-                           <td>Approved</td>
-                           <td class="td-actions">
-                              <img src="./images/lock.svg" alt="lock">
-                              <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                              <img src="./images/eye.svg" alt="show">
-                           </td>
-                        </tr>
-                        <tr>
-                           <td> 04</td>
-                           <td class="td-user">
-                              <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                           </td>
-                           <td>Rossie52@yahoo.com</td>
-                           <td>503-254-9294</td>
-                           <td>Dubai</td>
-                           <td>Khalifa street</td>
-                           <td>Approved</td>
-                           <td class="td-actions">
-                              <img src="./images/lock.svg" alt="lock">
-                               <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
-                               <img src="./images/eye.svg" alt="show">
-                           </td>
-                        </tr>
-                        <tr>
-                           <td> 05</td>
-                           <td class="td-user">
-                              <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                           </td>
-                           <td>Rossie52@yahoo.com</td>
-                           <td>503-254-9294</td>
-                           <td>Dubai</td>
-                           <td>Khalifa street</td>
-                           <td>Approved</td>
-                           <td class="td-actions">
-                              <img src="./images/lock.svg" alt="lock">
-                               <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
-                               <img src="./images/eye.svg" alt="show">
-                           </td>
-                        </tr>
-                       </tbody>
-                     </table>
-                  </div>
-               </div>
-               </div>
-            </section>
+          
          </main>
    </div>
 
@@ -515,26 +298,26 @@
          </div>
       </div>
 
-         <!-- Modal Agenda -->
-         <div class="modal fade modal-delete" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-               </div>
-               <div class="modal-body pt-0">
-                  <img src="./images/Delete.gif" alt="Delete">
-                  <h5>Delete</h5>
-                  <p>Are you sure to delete the volunteer?</p>
-               </div>
-               <div class="modal-footer justify-content-center pt-0">
-                  <button type="button" class="btn-delete" data-bs-dismiss="modal">Delete</button>
-                  <button type="button"  class="btn-hide" data-bs-dismiss="modal">Cancel</button>
-                </div>
-            
+      <!-- Modal Delete -->
+      <div class="modal fade modal-delete" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body pt-0">
+               <img src="./images/Delete.gif" alt="Delete">
+               <h5>Delete</h5>
+               <p>Are you sure to delete the volunteer?</p>
             </div>
+            <div class="modal-footer justify-content-center pt-0">
+               <button type="button" class="btn-delete" data-bs-dismiss="modal">Delete</button>
+               <button type="button"  class="btn-hide" data-bs-dismiss="modal">Cancel</button>
+               </div>
+         
          </div>
+         </div>
+      </div>
     
     <!-- Font Awesome Light JS  5.12-->
     <script src="../icons/all.min.js"></script>
@@ -551,5 +334,7 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-</body>
+   <!---Tabs JS--->
+   <script src="./js/tabs.js"></script>
+</body>     
 </html>
