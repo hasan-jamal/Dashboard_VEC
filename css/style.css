@@ -253,7 +253,7 @@ p{
    line-height: 17px;
    letter-spacing: -0.333333px;
    color: rgba(255, 255, 255, 0.4);
-   padding-bottom: 30px;
+   padding-bottom: 0px;
  }
  .event-sec-dateTime{
    display: flex;
@@ -274,7 +274,8 @@ p{
    color: #FFFFFF;
  }
  .home-table .container-padding{
-   padding: 20px 40px;
+   padding: 0px 40px 30px 40px;
+   
  }
  .home-table .home-table-data{
    padding: 20px;
