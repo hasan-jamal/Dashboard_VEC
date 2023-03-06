@@ -301,14 +301,23 @@ p{
    color: #2E2E2E;
  }
  .home-table .home-table-data .home-table-list table td{
-   font-family: 'Dubai ';
+   font-family: 'Dubai';
    font-weight: 400;
    font-size: 15px;
    line-height: 16px;
    color: #000000;
  }
+
+ .td-status .circle{
+   width: 10.77px;
+   height: 10.7px;
+   border-radius: 50%;
+   margin-right: 5px;
+   float: left;
+   margin-top:3px;
+ }
 .home-table-list table td{
-   padding-top: 15px ;
+   padding-top: 15px;
  }
  .home-table-list table tr:last-child{
    border-bottom: 1px solid #fff !important;

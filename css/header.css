@@ -11,6 +11,7 @@
     flex-direction: column;
     flex: 1;
     width: 100%;
+    background: #F2F2F2;
  }
  
  /* Sidebar */
@@ -212,7 +213,7 @@
 .header-nav{
    padding: 20px 20px 20px 20px;
    width: 100%;
-   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   box-shadow: rgba(211, 211, 211, 0.1) 0px 4px 12px;
    height: 98px;
    background-color: #fff;
 }
