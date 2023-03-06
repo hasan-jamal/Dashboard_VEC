@@ -22,6 +22,7 @@
 </head>
 
 <body>
+   <div class="overShadow" id="overShadow"></div>
     <div class="s-layout">
         <!-- Sidebar -->
         <div class="s-layout__sidebar">
@@ -40,13 +41,13 @@
                     </div>
                 </li>
                 <li>
-                  <a class="s-sidebar__nav-link active" href="./index.html">
+                  <a class="s-sidebar__nav-link " href="./index.html">
                    <img src="./images/home2.svg" alt="Dashboard" >
                      <span>Dashboard</span>
                   </a>
                </li>
                <li>
-                  <a class="s-sidebar__nav-link" href="./Volunteer.html">
+                  <a class="s-sidebar__nav-link active" href="./Volunteer.html">
                    <img src="./images/Volunteer.svg" alt="Volunteer">
                    <span>Volunteer</span>
                   </a>
@@ -101,6 +102,7 @@
         
         <!-- Content -->
          <main class="s-layout__content">
+           
             <section class="header-nav ">
                <div class="row align-items-center">
                   <div class="col-md-6">
@@ -191,6 +193,95 @@
                   </div>
                </div>
             </section>
+            <section class="section-filter" id="section-filter">
+               <form action="">
+                  <div class="form-group">
+                     <label for="age">Age</label>
+                     <div class="box-input">
+                        <input type="text" id="age" class="form-control">
+                        <img src="./images/age.svg" alt="age">
+                     </div>
+                
+                  </div>
+                  <div class="form-group">
+                     <label for="degree">Degree</label>
+                         <select name="degree" id="degree" >
+                           <option value="" selected>Bachelor's</option>
+                           <option value="">Diploma</option>
+                           <option value="">High school</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                     <label for="state">State</label>
+                         <select name="state" id="state" >
+                           <option value="" selected>Dubai - Abu Dhabi</option>
+                           <option value="">Dubai</option>
+                           <option value="">Dubai</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                     <label for="state">Gender</label>
+                         <select name="state" id="state" >
+                           <option value="" selected>All </option>
+                           <option value="">Female</option>
+                           <option value="">Male</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                     <label for="work">Work</label>
+                     <div class="box-input">
+                        <input type="text" id="work" class="form-control">
+                        <img src="./images/work.svg" alt="work">
+                     </div>
+                
+                  </div>
+                  <div class="form-group">
+                     <label for="work">Work</label>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="box-input">
+                              <span>From</span>
+                              <input type="time" id="work" class="form-control">
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="box-input">
+                              <span>To</span>
+                              <input type="time" id="work" class="form-control">
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="form-group buttons-days">
+                     <label for="volunteerDays">Volunteer days</label>
+                    <div class="row">
+                        <div class="col-md-4 col-6">
+                            <button type="button" class="btn">Saturday</button>
+                        </div>
+                        <div class="col-md-4 col-6">
+                           <button type="button" class="btn">Sunday</button>
+                       </div>
+                       <div class="col-md-4 col-6">
+                          <button type="button" class="btn">Monday</button>
+                        </div>
+                        <div class="col-md-4 col-6">
+                           <button type="button" class="btn">Tuesday</button>
+                         </div>
+                         <div class="col-md-4 col-6">
+                           <button type="button" class="btn">Wednesday</button>
+                         </div>
+                         <div class="col-md-4 col-6">
+                           <button type="button" class="btn">Thursday</button>
+                         </div>
+                         <div class="col-md-4 col-6">
+                           <button type="button" class="btn">Friday</button>
+                         </div>
+                    </div>
+                
+                  </div>
+               </form>
+            </section>
             <section class="section-volunteer">
                <div class="container-padding">
                   <div class="section-volunteer-header">
@@ -203,7 +294,7 @@
                    
                   </div>
                   <div class="section-volunteer-tabs">
-                     <div>
+                     <div class="tab-order">
                         <a href="#Volunteer" data-tab="Volunteer" class="b-nav-tab active">
                            Volunteer List
                          </a>
@@ -216,7 +307,7 @@
                            <i class="fal fa-search"></i>
                            <input type="text" class="form-control" placeholder="Search for Volunteer">
                         </div>
-                        <button>
+                        <button type="button" id="btnFilter" onclick="openFilter()">
                            <i class="fal fa-filter"></i>
                            Filter
                         </button>
@@ -374,7 +465,135 @@
                         </section>
                       </div>
                       <div id="Invitations" class="b-tab">
-                        Green tab content
+                        <section class="home-table">
+                           <div class="container-padding">
+                              <div class="home-table-data">
+                          
+                           
+                              <div class="home-table-list">
+                                 <table class="table table-borderd table-hover">
+                                   <thead>
+                                       <tr>
+                                          <th> ID</th>
+                                          <th>Full name</th>
+                                          <th>E-mail</th>
+                                          <th>Job Title</th>
+                                          <th>Volunteer hours</th>
+                                          <th>Volunteer date</th>
+                                          <th>State</th>
+                                          <th>Status</th>
+                                          <th>Actions</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                    <tr>
+                                       <td> 01</td>
+                                       <td class="td-user">
+                                          <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                       </td>
+                                       <td>Rossie52@yahoo.com</td>
+                                       <td>Global</td>
+                                       <td>5</td>
+                                       <td>22/02/2023</td>
+                                       <td>Dubai</td>
+                                       <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                       <td  class="td-actions">
+                                          <img src="./images/new.svg" alt="new">
+                                          <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                          <img src="./images/eye.svg" alt="show">
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td> 01</td>
+                                       <td class="td-user">
+                                          <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                       </td>
+                                       <td>Rossie52@yahoo.com</td>
+                                       <td>Global</td>
+                                       <td>5</td>
+                                       <td>22/02/2023</td>
+                                       <td>Dubai</td>
+                                       <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                       <td  class="td-actions">
+                                          <img src="./images/new.svg" alt="new">
+                                          <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                          <img src="./images/eye.svg" alt="show">
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td> 01</td>
+                                       <td class="td-user">
+                                          <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                       </td>
+                                       <td>Rossie52@yahoo.com</td>
+                                       <td>Global</td>
+                                       <td>5</td>
+                                       <td>22/02/2023</td>
+                                       <td>Dubai</td>
+                                       <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                       <td  class="td-actions">
+                                          <img src="./images/new.svg" alt="new">
+                                          <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                          <img src="./images/eye.svg" alt="show">
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td> 01</td>
+                                       <td class="td-user">
+                                          <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                       </td>
+                                       <td>Rossie52@yahoo.com</td>
+                                       <td>Global</td>
+                                       <td>5</td>
+                                       <td>22/02/2023</td>
+                                       <td>Dubai</td>
+                                       <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                       <td  class="td-actions">
+                                          <img src="./images/new.svg" alt="new">
+                                          <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                          <img src="./images/eye.svg" alt="show">
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td> 01</td>
+                                       <td class="td-user">
+                                          <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                       </td>
+                                       <td>Rossie52@yahoo.com</td>
+                                       <td>Global</td>
+                                       <td>5</td>
+                                       <td>22/02/2023</td>
+                                       <td>Dubai</td>
+                                       <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                       <td  class="td-actions">
+                                          <img src="./images/new.svg" alt="new">
+                                          <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                          <img src="./images/eye.svg" alt="show">
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td> 01</td>
+                                       <td class="td-user">
+                                          <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                       </td>
+                                       <td>Rossie52@yahoo.com</td>
+                                       <td>Global</td>
+                                       <td>5</td>
+                                       <td>22/02/2023</td>
+                                       <td>Dubai</td>
+                                       <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                       <td  class="td-actions">
+                                          <img src="./images/new.svg" alt="new">
+                                          <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                          <img src="./images/eye.svg" alt="show">
+                                       </td>
+                                    </tr>
+                                   </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                           </div>
+                        </section>
                       </div>
                   
                   </div>
@@ -484,9 +703,6 @@
     <script src="../icons/light.min.js"></script>
    <!---Language Picker JS-->
    <script src="../js/dropdown_lang.js"></script>
-   <!---Chart JS-->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-   <script src="./js/chart.js"></script>
    <!---Close and Open Sidebar in mobile-->
    <script src="./js/sidebar.js"></script>
    <!---Boostrap  5 JS-->
@@ -496,5 +712,26 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
    <!---Tabs JS--->
    <script src="./js/tabs.js"></script>
+
+   <script>
+      var buttons = document.getElementsByClassName("btn");
+      for (var i = 0; i < buttons.length; i++) {
+      document.getElementsByClassName("btn")[i].addEventListener("click", function() {
+         this.classList.add("test_skill");
+      });
+      }
+      var overShadow = document.getElementById("overShadow");
+      var sectionFilter = document.getElementById("section-filter");
+      overShadow.style.display="none";
+      sectionFilter.style.display="none";
+      function openFilter(){
+         overShadow.style.display="block";
+         sectionFilter.style.display="block";
+      }
+      overShadow.addEventListener("click", function(event) {
+         overShadow.style.display="none";
+         sectionFilter.style.display="none";
+      });
+   </script>
 </body>     
 </html>

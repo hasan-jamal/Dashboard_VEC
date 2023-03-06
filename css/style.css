@@ -29,6 +29,10 @@
 p{
    margin-bottom: 0px;
 }
+body{
+   position: relative;
+   transition: 0.3s;
+}
 /* Dashboard Page 1 */
  /* Section Boxs */
  .boxs .container-padding{
@@ -298,6 +302,7 @@ p{
    font-weight: 400;
    font-size: 15px;
    line-height: 16px;
+   text-align: center;
    color: #2E2E2E;
  }
  .home-table .home-table-data .home-table-list table td{
@@ -305,15 +310,17 @@ p{
    font-weight: 400;
    font-size: 15px;
    line-height: 16px;
+   text-align: center;
    color: #000000;
  }
 
  .td-status .circle{
+   position: absolute;
    width: 10.77px;
    height: 10.7px;
    border-radius: 50%;
-   margin-right: 5px;
-   float: left;
+   margin-left: 0px;
+   display: block;
    margin-top:3px;
  }
 .home-table-list table td{
