@@ -257,7 +257,8 @@
                                        <td>Khalifa street</td>
                                        <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
                                        <td  class="td-actions">
-                                          <img src="./images/lock.svg" alt="lock">
+                                          <img src="./images/lock.svg" alt="lock" id="lock">
+                                          <img src="./images/lock-off.svg" alt="lock" id="lock-off">
                                           <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
                                           <img src="./images/eye.svg" alt="show">
                                        </td>
@@ -273,7 +274,8 @@
                                        <td>Khalifa street</td>
                                        <td class="td-status"><div class="circle" style="background: #CD0000;"></div> Rejected</td>
                                        <td class="td-actions">
-                                          <img src="./images/lock.svg" alt="lock">
+                                          <img src="./images/lock.svg" alt="lock" id="lock">
+                                          <img src="./images/lock-off.svg" alt="lock" id="lock-off">
                                           <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
                                           <img src="./images/eye.svg" alt="show">
                                        </td>
@@ -289,7 +291,8 @@
                                        <td>Khalifa street</td>
                                        <td class="td-status"><div class="circle" style="background: #D3A500;"></div> Pending</td>
                                        <td class="td-actions">
-                                          <img src="./images/lock.svg" alt="lock">
+                                          <img src="./images/lock.svg" alt="lock" id="lock" onclick="lockOn()">
+                                          <img src="./images/lock-off.svg" alt="lock" id="lock-off" onclick="lockOff()">
                                           <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
                                           <img src="./images/eye.svg" alt="show">
                                        </td>
@@ -305,7 +308,8 @@
                                        <td>Khalifa street</td>
                                        <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
                                        <td class="td-actions">
-                                          <img src="./images/lock.svg" alt="lock">
+                                           <img src="./images/lock.svg" alt="lock" id="lock">
+                                           <img src="./images/lock-off.svg" alt="lock" id="lock-off">
                                            <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
                                            <img src="./images/eye.svg" alt="show">
                                        </td>
@@ -321,7 +325,43 @@
                                        <td>Khalifa street</td>
                                        <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
                                        <td class="td-actions">
-                                          <img src="./images/lock.svg" alt="lock">
+                                           <img src="./images/lock.svg" alt="lock" id="lock">
+                                           <img src="./images/lock-off.svg" alt="lock" id="lock-off">
+                                           <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
+                                           <img src="./images/eye.svg" alt="show">
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td> 06</td>
+                                       <td class="td-user">
+                                          <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                       </td>
+                                       <td>Rossie52@yahoo.com</td>
+                                       <td>503-254-9294</td>
+                                       <td>Dubai</td>
+                                       <td>Khalifa street</td>
+                                       <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                       <td class="td-actions">
+                                           <img src="./images/lock.svg" alt="lock" id="lock">
+                                           <img src="./images/lock-off.svg" alt="lock" id="lock-off">
+                                           <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
+                                           <img src="./images/eye.svg" alt="show">
+                                       </td>
+                                    </tr>
+
+                                    <tr>
+                                       <td> 07</td>
+                                       <td class="td-user">
+                                          <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                       </td>
+                                       <td>Rossie52@yahoo.com</td>
+                                       <td>503-254-9294</td>
+                                       <td>Dubai</td>
+                                       <td>Khalifa street</td>
+                                       <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                       <td class="td-actions">
+                                           <img src="./images/lock.svg" alt="lock" id="lock">
+                                           <img src="./images/lock-off.svg" alt="lock" id="lock-off">
                                            <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
                                            <img src="./images/eye.svg" alt="show">
                                        </td>
@@ -438,6 +478,7 @@
          </div>
       </div>
     
+
     <!-- Font Awesome Light JS  5.12-->
     <script src="../icons/all.min.js"></script>
     <script src="../icons/light.min.js"></script>
