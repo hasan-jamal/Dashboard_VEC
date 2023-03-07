@@ -362,10 +362,10 @@
                                           <span>Wednesday</span>
                                        </div>
                                        <div class="col-md-3 col-6">
-                                          <span class="span-active">Thursday</span>
+                                          <span class="span-active ms-2">Thursday</span>
                                        </div>
                                        <div class="col-md-3 col-6">
-                                          <span class="span-active">Friday</span>
+                                          <span class="span-active ms-2">Friday</span>
                                        </div>
                                     </div>
                                  </div>
@@ -492,30 +492,97 @@
 </div>
 
 
-   
-
-      <!-- Modal Delete -->
-      <div class="modal fade modal-delete" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-         <div class="modal-dialog modal-dialog-centered">
-         <div class="modal-content">
-            <div class="modal-header">
-               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body pt-0">
-               <img src="./images/Delete.gif" alt="Delete">
-               <h5>Delete</h5>
-               <p>Are you sure to delete the volunteer?</p>
-            </div>
-            <div class="modal-footer justify-content-center pt-0">
-               <button type="button" class="btn-delete" data-bs-dismiss="modal">Delete</button>
-               <button type="button"  class="btn-hide" data-bs-dismiss="modal">Cancel</button>
+   <!--Modal Add Volunteer--->
+   <div class="modal fade modal-add-volunteer" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body pt-0">
+            <form action="">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="form-group">
+                          <label for="">Job title</label>
+                          <input type="text">
+                      </div>
+                      <div class="form-group">
+                        <label for="description">Description</label>
+                       <textarea name="description" id="description" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                     <label for="volunteerTimes">Volunteer times</label>
+                     <div class="d-flex align-items-center volunteerTimes">
+                        <div class="form-group">
+                           <label for="startDate">From</label>
+                           <input type="text" class="form-control">
+                       </div>
+                     </div>
+                    <textarea name="volunteerTimes" id="volunteerTimes" class="form-control"></textarea>
+                 </div>
+                 </div>
+                  <div class="col-md-6">
+                     <div class="form-group">
+                           <label for="">Volunteer days</label>
+                           <div class="row">
+                           <div class="col-md-4 col-6">
+                              <button>Saturday</button>
+                           </div>
+                           <div class="col-md-4 col-6">
+                              <button>Sunday</button>
+                           </div>
+                           <div class="col-md-4 col-6">
+                              <button>Monday</button>
+                           </div>
+                           <div class="col-md-4 col-6">
+                              <button>Tuesday</button>
+                           </div>
+                           <div class="col-md-4 col-6">
+                              <button>Wednesday</button>
+                           </div>
+                           <div class="col-md-4 col-6">
+                              <button>Thursday</button>
+                           </div>
+                           <div class="col-md-4 col-6">
+                              <button>Friday</button>
+                           </div>
+                           </div>
+                        </div>
+                  </div>
+                
                </div>
-         
+            </form>
          </div>
-         </div>
+         <div class="modal-footer justify-content-center pt-0">
+            <button type="button" class="btn-delete" data-bs-dismiss="modal">Delete</button>
+            <button type="button"  class="btn-hide" data-bs-dismiss="modal">Cancel</button>
+            </div>
+      
       </div>
+      </div>
+   </div>
+   <!-- Modal Delete -->
+   <div class="modal fade modal-delete" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body pt-0">
+            <img src="./images/Delete.gif" alt="Delete">
+            <h5>Delete</h5>
+            <p>Are you sure to delete the volunteer?</p>
+         </div>
+         <div class="modal-footer justify-content-center pt-0">
+            <button type="button" class="btn-delete" data-bs-dismiss="modal">Delete</button>
+            <button type="button"  class="btn-hide" data-bs-dismiss="modal">Cancel</button>
+            </div>
+      
+      </div>
+      </div>
+   </div>
     
-
     <!-- Font Awesome Light JS  5.12-->
     <script src="../icons/all.min.js"></script>
     <script src="../icons/light.min.js"></script>
