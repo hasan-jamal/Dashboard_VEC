@@ -307,9 +307,11 @@
    }
    .box-volunteer-flex{
         display: flex;
-        padding: 17px;
-        background: #fff;
-        border-radius: 15px;
+   }
+   .style-box-volunteer{
+    padding: 17px;
+    background: #fff;
+    border-radius: 15px;
    }
    .box-volunteer-flex .box-volunteer-flex-img{
      padding-right: 10px;
@@ -323,6 +325,8 @@
         font-size: 20px;
         line-height: 34px;
         color: #000000;
+        display: flex;
+        align-items: center;
     }
     .box-volunteer-flex-texs p{
         margin-bottom: 7px;
@@ -341,4 +345,109 @@
        height: 15px;
        margin: 0 5px;
        filter: invert(54%) sepia(20%) saturate(11%) hue-rotate(53deg) brightness(93%) contrast(93%);
+    }
+    .box-volunteer-flex-texs .div-status{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+    .title-volunteer{
+        font-family: 'Dubai Bold';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 27px;
+        color: #000000;
+    }
+    .box-volunteer-days span{
+        font-family: 'Dubai';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 22px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.3);
+    }
+    .box-volunteer-days .span-active{
+        color: #000000;
+    }
+    .box-volunteer-times{
+        border-left: 0.3px solid #000000;
+        padding-left: 15px;
+    }
+    .time-volunteer p span{
+        font-family: 'Dubai';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 22px;
+        color: #000000;
+    }
+    .time-volunteer p .address{
+        color: rgba(0, 0, 0, 0.5);
+        padding:0px 5px 0px 2px;
+    }
+    .section-detalis-volounteer{
+        padding: 20px;
+    }
+    .section-detalis-volounteer .tab-order{
+        padding-left: 20px;
+    }
+    .section-detalis-volounteer .data-volunteer{
+        background: #fff;
+        padding: 20px 24px;
+        border-radius: 15px;
+    }
+    /* Card Volunteer */
+    .card-volunteer{
+        position: relative;
+        background: rgba(247, 247, 247, 0.2);
+        border: 0.8px solid #D9D9D9;
+        border-radius: 10px;
+        height: 136px;
+        padding: 10px 8px;
+        margin-bottom: 15px;
+    }
+    .check-circle{
+        position: absolute;
+        right: 10px;
+        top:10px;
+        cursor: pointer;
+    }
+    .check-success{
+        filter: invert(34%) sepia(89%) saturate(2227%) hue-rotate(75deg) brightness(100%) contrast(101%);    }
+    .check-danger{
+        filter: invert(12%) sepia(76%) saturate(5712%) hue-rotate(10deg) brightness(89%) contrast(126%);
+    }
+    .card-volunteer h4{
+        font-family: 'Dubai';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #000000;
+    }
+    .card-volunteer .p-head{
+        font-family: 'Dubai';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 22px;
+        color: #000000;
+        width: 80%;
+    }
+    .card-volunteer .p-details{
+        display: flex;
+        align-items: center;
+    }
+    .card-volunteer .p-details span{
+        font-family: 'Dubai';
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 17px;
+        color: #858585;
+        padding: 0 5px;
+    }
+    .card-volunteer .p-details img{
+        width:20px;
+        margin-top: -3px;
+        height: 20px;
+        padding-right: 5px;
+        filter: invert(56%) sepia(21%) saturate(25%) hue-rotate(44deg) brightness(90%) contrast(87%);
     }
