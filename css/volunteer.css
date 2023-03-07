@@ -278,3 +278,67 @@
         padding: 7px;
     }
    }
+   /* Volunteer View  */
+   .section-volunteer-filter .btn-add{
+    color: #FFFFFF !important;
+    border: none !important;
+    margin-left: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: linear-gradient(250.81deg, #B68934 37.09%, #B79308 80.38%) !important;
+   }
+   .section-volunteer-filter select{
+        background: rgba(217, 217, 217, 0.2);
+        border: 0.5px solid #A3A3A3;
+        border-radius: 10px;
+        width: 259px;
+        height: 42px;
+        font-family: 'Dubai';
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 29px;
+        letter-spacing: -0.333333px;
+        color: #000000;
+        padding: 0 15px;
+        margin-top: -30px;
+   }
+   .box-volunteer .container-padding{
+    padding: 20px;
+    width: 100%;
+   }
+   .box-volunteer-flex{
+        display: flex;
+        padding: 17px;
+        background: #fff;
+        border-radius: 15px;
+   }
+   .box-volunteer-flex .box-volunteer-flex-img{
+     padding-right: 10px;
+    }
+    .box-volunteer-flex .box-volunteer-flex-img img{
+        width: 89px;
+        height: 88px;
+    }
+    .box-volunteer-flex .box-volunteer-flex-texs h1{
+        font-family: 'Dubai Medium';
+        font-size: 20px;
+        line-height: 34px;
+        color: #000000;
+    }
+    .box-volunteer-flex-texs p{
+        margin-bottom: 7px;
+        display: flex;
+        align-items: center;
+    }
+    .box-volunteer-flex-texs p span{
+        font-family: 'Dubai';
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 17px;
+        color: #858585;
+    }
+    .box-volunteer-flex-texs p span img{
+       width: 15px;
+       height: 15px;
+       margin: 0 5px;
+       filter: invert(54%) sepia(20%) saturate(11%) hue-rotate(53deg) brightness(93%) contrast(93%);
+    }
