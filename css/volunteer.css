@@ -405,6 +405,7 @@
         height: 136px;
         padding: 10px 8px;
         margin-bottom: 15px;
+        cursor: pointer;
     }
     .check-circle{
         position: absolute;
@@ -451,3 +452,347 @@
         padding-right: 5px;
         filter: invert(56%) sepia(21%) saturate(25%) hue-rotate(44deg) brightness(90%) contrast(87%);
     }
+    /* Modal Add Volunteer */
+.modal-add-volunteer .modal-body{
+    padding: 35px 15px !important;
+    position: relative;
+ }
+ .img-check{
+    position: absolute;
+    right:20px;
+    top: 20px;
+ }
+ .modal-add-volunteer form .form-group{
+    margin-bottom: 15px;
+ }
+ .modal-add-volunteer form label{
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: -0.333333px;
+    margin-bottom: 8px;
+    color: #000000;
+    display: block;
+ }
+ @media (min-width: 576px){
+    .modal-add-volunteer .modal-dialog-centered {
+     max-width:861px;
+    }
+ }
+ .modal-add-volunteer form .volunteer-input,
+ .modal-add-volunteer form textarea
+ {
+    background: rgba(217, 217, 217, 0.2);
+    border: 0.5px solid #A3A3A3;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+ }
+ .modal-add-volunteer form input,
+ .modal-add-volunteer form textarea{
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: #000000;
+ }
+ .modal-add-volunteer form textarea{
+    height: 90px !important;
+ }
+ .modal-add-volunteer .button-form button{
+    background: rgba(217, 217, 217, 0.2);
+    border: 0.5px solid #A3A3A3;
+    border-radius: 10px;
+    height: 50px;
+    width: 112px;
+    margin-bottom: 10px;
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+ }
+ .modal-add-volunteer .modal-footer{
+    border-top: none;
+ }
+.btn-send{
+    background: linear-gradient(268.66deg, #B79308 -15.62%, #B68934 101.46%);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    height: 48px;
+    font-family: 'Dubai';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 180.17px;
+    border: none;
+ }
+ .btn-send:hover{
+    background: linear-gradient(268.66deg, #8d7105 -15.62%, #7d5409 101.46%);
+ }
+ .modal-add-volunteer form .box-inputs{
+    display: flex;
+    align-items: center;
+    background: rgba(217, 217, 217, 0.2);
+    border: 0.5px solid #A3A3A3;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+ }
+ .modal-add-volunteer form .box-inputs label{
+    padding: 0 16px;
+    margin-bottom: 0px;
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.5);
+ }
+ .modal-add-volunteer form .box-inputs input{
+    background: none;
+    border: none;
+ }
+ .modal-add-volunteer form .form-group .box-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(217, 217, 217, 0.2);
+    border: 0.5px solid #A3A3A3;
+    border-radius: 10px;
+    height: 50px;
+ }
+ .modal-add-volunteer form .form-group .box-icon input{
+    border: none;
+    background: none;
+ }
+ .modal-add-volunteer form .form-group .box-icon img{
+    margin: 0 15px;
+    width: 18px;
+    height: 18px
+ }
+ /* Certificate */
+ .show-certificate .modal-body{
+    padding: 10px !important;
+ }
+ .show-certificate-texts{
+    position: relative;
+    background: url(../images/back-certificate.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 409.8px;
+    padding-top: 30px;
+ }
+ @media (min-width: 576px){
+.show-certificate .modal-dialog-centered {
+    max-width:649px;
+}}
+.show-certificate-texts .logo-certificate{
+    display: block;
+    margin: auto;
+    width: 119.13px;
+    margin-bottom: 20px;
+    height: 34.94px;
+}
+.show-certificate-texts h4{
+    font-family: 'Dubai Medium';
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    color: #B68934;
+}
+.show-certificate-texts p{
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    color: #000000;
+}
+.show-certificate-texts h2{
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+}
+.show-certificate-texts span{
+    font-family: 'Dubai';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    color: #000000;
+    padding-bottom: 10px;
+}
+.show-certificate-texts h5{
+    font-family: 'Dubai';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+}
+.show-certificate-texts .signature{
+    position: absolute;
+    left: 24px;
+    bottom: 23px;
+}
+.show-certificate .modal-footer{
+ border-top: 0px;
+}
+.show-certificate .modal-header{
+ border-bottom: 0px;
+ position: absolute;
+ z-index: 100;
+}
+.show-certificate .modal-header button{
+   position: absolute;
+   top: 29px;
+   left: 29px;
+}
+/* Modal Proof */
+.proof-modal .modal-header{
+    border-bottom: 0px;
+    position: absolute;
+    z-index: 100;
+}
+.proof-modal .modal-header button{
+    position: absolute;
+    top: 19px;
+    left: 29px;
+    font-size: 30px;
+    color: #fff;
+    background: #000;
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+    border: none;
+}
+.proof-modal .proof-modal-texts .back-proof{
+    height: 190px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+@media (min-width: 576px){
+    .proof-modal .modal-dialog-centered {
+        max-width:649px;
+}}
+.proof-modal-texts p{
+    display: flex;
+    align-items: center;
+}
+.proof-modal-texts p span{
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+.proof-modal-texts p .span-bold{
+    color: #000000;
+    padding: 0 5px;
+}
+.proof-modal-texts p img{
+    width: 23px;
+    height: 23px;
+    margin-right: 5px;
+}
+.proof-modal-texts h4{
+    font-family: 'Dubai Medium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #000000;
+}
+.proof-modal-texts p{
+    font-family: 'Dubai';
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 22px;
+    color: #000000;
+}
+.proof-modal  .modal-footer{
+    border-top: none;
+}
+.proof-modal  .modal-footer .btn-send{
+    width: 300px;
+    font-weight: 500;
+}
+.proof-modal .form-group{
+    margin-bottom: 10px;
+}
+.proof-modal .form-group input{
+    font-family: 'Dubai';
+     font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: #000000;
+}
+.proof-modal .form-group .input-proof{
+    background: rgba(217, 217, 217, 0.2);
+    border: 0.5px solid #A3A3A3;
+    border-radius: 10px;  
+    height: 50px;
+    width: 100%;
+}
+.proof-modal .form-group label{
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #000000;
+    padding-bottom: 5px;
+}
+.proof-modal .form-group input{
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: #000000;
+}
+.proof-modal .form-group .box-input{
+    background: rgba(217, 217, 217, 0.2);
+    border: 0.5px solid #A3A3A3;
+    border-radius: 10px;  
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.proof-modal .form-group .box-input input{
+    border: none;
+    background: none;
+}
+.proof-modal .form-group .box-input img,
+.proof-modal .form-group .box-input svg{
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+}
+.proof-modal .form-group .date-box{
+    background: rgba(217, 217, 217, 0.2);
+    border: 0.5px solid #A3A3A3;
+    border-radius: 10px;
+    height: 50px;
+}
+.proof-modal .form-group .date-box span{
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
+}
+.proof-modal .form-group .date-box input{
+    background: none;
+    border: none;
+}
