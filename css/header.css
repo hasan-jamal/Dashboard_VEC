@@ -392,6 +392,7 @@
  
  .notification .box{
    width: 400px;
+   z-index: 1000;
    height: 0px;
    border-radius: 10px;
    transition: 0.5s;

@@ -18,6 +18,7 @@
 }
 .section-volunteer .section-volunteer-header img{
     width: 18px;
+    margin-top: -3px;
     height: 16px;
     filter: invert(72%) sepia(0%) saturate(1%) hue-rotate(21deg) brightness(88%) contrast(90%);
 }
@@ -492,7 +493,7 @@
  .modal-add-volunteer form input,
  .modal-add-volunteer form textarea{
     font-family: 'Dubai';
-    font-weight: 400;
+    font-weight: 400;   
     font-size: 13px;
     line-height: 22px;
     color: #000000;
@@ -795,4 +796,119 @@
 .proof-modal .form-group .date-box input{
     background: none;
     border: none;
+}
+/* Emoployees Page */
+
+.section-employees .home-table-data {
+    border-top-right-radius: 15px  !important;
+    border-top-left-radius: 15px !important;;
+}
+.section-volunteer-filter .lock-off{
+    background: rgba(217, 217, 217, 0.2);
+    border: 0.5px solid #A3A3A3;
+    border-radius: 5px;
+    padding: 8px;
+    width: 42px;
+    height: 42px;
+}
+.section-employees .container-padding{
+    padding:0px 20px 20px 20px;
+}
+.section-employees .section-employees-card {
+    padding: 17px;
+    height: 147px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.section-employees .section-employees-card .section-employees-card-img img{
+    border-radius: 10px;
+    width: 99px;
+    height: 98px;
+    margin-right: 10px;
+}
+.section-employees .section-employees-card .section-employees-card-text h3{
+    font-family: 'Dubai Medium';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+.section-employees .section-employees-card .section-employees-card-text .status-circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.section-employees .section-employees-card .section-employees-card-text .div-texts{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.section-employees .section-employees-card .section-employees-card-text .div-texts span{
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 17px;
+    color: #858585;
+}
+.section-employees .section-employees-card .section-employees-card-text .div-texts img{
+    margin:0px 5px;
+    filter: invert(55%) sepia(0%) saturate(134%) hue-rotate(285deg) brightness(95%) contrast(77%);
+}
+.section-employees .section-employees-card .section-employees-card-text .div-texts .back-Conference{
+    width: 12.77px;
+    height: 12.7px;
+    border-radius: 50%;
+    margin:0px 5px;
+
+}
+.section-employees-card2 {
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    height: 147px;
+    padding: 10px;
+}
+.section-employees-card2 h3{
+    font-family: 'Dubai Medium';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 7px;
+}
+.section-employees-card2 p{
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #838383;
+    margin-bottom: 10px;
+}
+.section-employees-card2 .calendaradd{
+    display: flex;
+    align-items: center;
+}
+.section-employees-card2 .calendaradd img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    filter: invert(0%) sepia(95%) saturate(20%) hue-rotate(46deg) brightness(92%) contrast(100%);}
+.section-employees-card2 .calendaradd span{
+    font-family: 'Dubai Medium';
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 17px;
+    color: #131313;}
+.section-employees-card2 .div-buttons button{
+    width: 112px;
+    height: 36px;
+    font-size: 13px;
+    margin-left: 10px;
 }
