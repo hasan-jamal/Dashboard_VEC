@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEC Dashboard</title>
+    <link rel="icon" href="">
+    <!--Style CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/volunteer.css">
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome Light CSS  5.12-->
+    <link rel="stylesheet" href="../icons/all.min.css">
+    <link rel="stylesheet" href="../icons/light.min.css">
+    <!---Language Picker CSS--->
+    <link rel="stylesheet" href="./css/languagePicker.css">
+</head>
+
+<body>
+    <div class="s-layout">
+        <!-- Sidebar -->
+        <div class="s-layout__sidebar">
+          <a class="s-sidebar__trigger" onclick="openSidebar()" id="sidebar__trigger">
+             <i class="fa fa-bars"></i>
+          </a>
+          <nav class="s-sidebar__nav" id="sidebar-nav">
+            <button id="btnClose" onclick="closeSidebar()">
+               <i class="fal fa-times"></i>
+            </button>
+             <ul>
+                <li>
+                    <div class="search-nav">
+                            <input type="text" class="form-control">
+                            <div class="border-bottom"></div>
+                    </div>
+                </li>
+                <li>
+                  <a class="s-sidebar__nav-link " href="./index.html">
+                   <img src="./images/home2.svg" alt="Dashboard" >
+                     <span>Dashboard</span>
+                  </a>
+               </li>
+               <li>
+                  <a class="s-sidebar__nav-link active" href="./Volunteer.html">
+                   <img src="./images/Volunteer.svg" alt="Volunteer">
+                   <span>Volunteer</span>
+                  </a>
+               </li>
+               <li>
+                  <a class="s-sidebar__nav-link" href="./Agenda.html">
+                      <img src="./images/Agenda.svg" alt="Agenda">
+                       <span>Agenda</span>
+                  </a>
+               </li>
+               <li>
+                   <a class="s-sidebar__nav-link" href="./Event.html">
+                       <img src="./images/Event.svg" alt="Event">
+                       <span>Event</span>
+                   </a>
+                </li>
+                <li>
+                   <a class="s-sidebar__nav-link" href="./Employees.html">
+                       <img src="./images/Employees.svg" alt="Employees">
+                        <span>Employees</span>
+                   </a>
+                </li>
+                <li>
+                   <a class="s-sidebar__nav-link" href="./Guests.html">
+                        <img src="./images/Guests.svg" alt="Guests">
+                        <span>Guests</span>
+                   </a>
+                </li>
+                <li>
+                   <a class="s-sidebar__nav-link" href="./Reports.html">
+                        <img src="./images/Reports.svg" alt="Reports">
+                        <span>Reports</span>
+                   </a>
+                </li>
+                <li class="li-dash li-setting">
+                       <a class="s-sidebar__nav-link" href="./Settings.html">
+                          <img src="./images/setting.svg" alt="setting">
+                          <span>Settings</span>
+                    </a>
+                </li>
+                 <li class="li-dash">
+                     <a class="s-sidebar__nav-link" href="#0">
+                        <img src="./images/logout.svg" alt="logout">
+                        <span>Log out</span>
+                       </a>
+                  </li>
+             </ul>
+            
+          </nav>
+        
+        </div>
+        
+        <!-- Content -->
+         <main class="s-layout__content">
+           
+            <section class="header-nav ">
+               <div class="row align-items-center">
+                  <div class="col-md-6">
+                     <div class="header-nav-text">
+                        <p>Hi Sultan bin Fahd,</p>
+                        <h4>Welcome to EVC !</h4>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     
+               <div class="header-nav-section-two">
+                  <div class="js">
+                        <div class="language-picker js-language-picker" data-trigger-class="btn btn--subtle">
+                           <form action="" class="language-picker__form">
+                           <label for="language-picker-select">Select your language</label>
+                           <select name="language-picker-select" id="language-picker-select">
+                              <option lang="de" value="arabic">Arabic</option>
+                              <option lang="en" value="english" selected>English</option>
+                           </select>
+                           </form>
+                     </div>
+                  </div>
+                  <div class = "notification">
+                     <a href = "#">
+                     <div class = "notBtn" href = "#">
+                       <!--Number supports double digets and automaticly hides itself when there is nothing between divs -->
+                       <div class = "number">4</div>
+                       <i class="fal fa-bell"></i>
+                         <div class = "box">
+                           <div class = "display">
+                             <div class = "nothing"> 
+                               <i class="fas fa-child stick"></i> 
+                               <div class = "cent">Looks Like your all caught up!</div>
+                             </div>
+                             <div class = "cont"><!-- Fold this div and try deleting evrything inbetween -->
+                                <div class = "sec new">
+                                  <a href = "" class="message-style">
+                                    <div class = "profCont">
+                                      <img class = "profile" src = "https://c1.staticflickr.com/5/4007/4626436851_5629a97f30_b.jpg">
+                                   </div>
+                                    <div class = "txt">Reymouth</div>
+                                    <div class = "txt-sub">Omnis minus illo saepe omnis saepe.</div>
+                                  </a>
+                               </div>
+                               <div class = "sec new">
+                                 <a href = "" class="message-style">
+                                   <div class = "profCont">
+                                     <img class = "profile" src = "https://c1.staticflickr.com/5/4007/4626436851_5629a97f30_b.jpg">
+                                  </div>
+                                   <div class = "txt">Reymouth</div>
+                                   <div class = "txt-sub">Omnis minus illo saepe omnis saepe.</div>
+                                 </a>
+                              </div>
+                              <div class = "sec new">
+                                 <a href = "" class="message-style">
+                                   <div class = "profCont">
+                                     <img class = "profile" src = "https://c1.staticflickr.com/5/4007/4626436851_5629a97f30_b.jpg">
+                                  </div>
+                                   <div class = "txt">Reymouth</div>
+                                   <div class = "txt-sub">Omnis minus illo saepe omnis saepe.</div>
+                                 </a>
+                              </div>
+                              <div class = "sec new">
+                                 <a href = "" class="message-style">
+                                   <div class = "profCont">
+                                     <img class = "profile" src = "https://c1.staticflickr.com/5/4007/4626436851_5629a97f30_b.jpg">
+                                  </div>
+                                   <div class = "txt">Reymouth</div>
+                                   <div class = "txt-sub">Omnis minus illo saepe omnis saepe.</div>
+                                 </a>
+                              </div>
+                            </div>
+                           </div>
+                        </div>
+                     </div>
+                       </a>
+                   </div>
+                   <div class="d-flex align-items-center style-user">
+                     <div class="text-user">
+                        <h5>Sultan bin Fahd,</h5>
+                        <p>Admin</p>
+                     </div>
+                     <div src="" alt="user" class="img-user"></div>
+                     <div class="point-color"></div>
+                   </div>
+               </div>
+          
+                  </div>
+               </div>
+            </section>
+         
+            <section class="section-volunteer">
+               <div class="container-padding">
+                  <div class="section-volunteer-header">
+                     <h1>Guests</h1>
+                     <p>
+                        <a href="./index.html"><img src="./images/home2.svg" alt="home2"> Dashboard</a>
+                        <span><i class="fal fa-chevron-right"></i></span>
+                        <a href="./Guests.html" class="a-active">Guests</a>
+                     </p>
+                   
+                  </div>
+                  <div class="section-volunteer-tabs mb-3">
+                     <div class="tab-order"></div>
+                     <div class="section-volunteer-filter">
+                        <div class="section-volunteer-search">
+                           <i class="fal fa-search"></i>
+                           <input type="text" class="form-control" placeholder="Search for Guests">
+                        </div>
+                        <button type="button" id="btnFilter" class="btn-export" onclick="openFilter()">
+                            <i class="fal fa-file-export me-2"></i>
+                           Export excel
+                        </button>
+                     </div>
+                    
+                  </div>
+                  <div class="section-vlounteer-content section-employees">
+                   
+                      <div id="Volunteer" class="b-tab active">
+                        <section class="home-table">
+                           <div class="container-padding">
+                              <div class="home-table-data">
+                          
+                           
+                              <div class="home-table-list">
+                                 <table class="table table-borderd table-hover">
+                                   <thead>
+                                       <tr>
+                                          <th> ID</th>
+                                          <th>Full name</th>
+                                          <th>E-mail</th>
+                                          <th>Mobile number</th>
+                                          <th>Country</th>
+                                          <th>Invitations</th>
+                                          <th>Approved</th>
+                                          <th>Actions</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                    <tr>
+                                       <td> 01</td>
+                                       <td class="td-user">
+                                          <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                       </td>
+                                       <td>Rossie52@yahoo.com</td>
+                                       <td>503-254-9294</td>
+                                       <td>5</td>
+                                       <td>3</td>
+                                       <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                       <td  class="td-actions">
+                                          <img src="./images/lock.svg" alt="lock" id="lock">
+                                          <img src="./images/lock-off.svg" alt="lock" id="lock-off">
+                                          <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                          <img src="./images/GuestsEye.svg" alt="show">
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 01</td>
+                                        <td class="td-user">
+                                           <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                        </td>
+                                        <td>Rossie52@yahoo.com</td>
+                                        <td>503-254-9294</td>
+                                        <td>5</td>
+                                        <td>3</td>
+                                        <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                        <td  class="td-actions">
+                                           <img src="./images/lock.svg" alt="lock" id="lock">
+                                           <img src="./images/lock-off.svg" alt="lock" id="lock-off">
+                                           <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                           <img src="./images/GuestsEye.svg" alt="show">
+                                        </td>
+                                     </tr>
+                                     <tr>
+                                        <td> 01</td>
+                                        <td class="td-user">
+                                           <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                        </td>
+                                        <td>Rossie52@yahoo.com</td>
+                                        <td>503-254-9294</td>
+                                        <td>5</td>
+                                        <td>3</td>
+                                        <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                        <td  class="td-actions">
+                                           <img src="./images/lock.svg" alt="lock" id="lock">
+                                           <img src="./images/lock-off.svg" alt="lock" id="lock-off">
+                                           <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                           <img src="./images/GuestsEye.svg" alt="show">
+                                        </td>
+                                     </tr>
+                                     <tr>
+                                        <td> 01</td>
+                                        <td class="td-user">
+                                           <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                        </td>
+                                        <td>Rossie52@yahoo.com</td>
+                                        <td>503-254-9294</td>
+                                        <td>5</td>
+                                        <td>3</td>
+                                        <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                        <td  class="td-actions">
+                                           <img src="./images/lock.svg" alt="lock" id="lock">
+                                           <img src="./images/lock-off.svg" alt="lock" id="lock-off">
+                                           <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                           <img src="./images/GuestsEye.svg" alt="show">
+                                        </td>
+                                     </tr>
+                                     <tr>
+                                        <td> 01</td>
+                                        <td class="td-user">
+                                           <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                        </td>
+                                        <td>Rossie52@yahoo.com</td>
+                                        <td>503-254-9294</td>
+                                        <td>5</td>
+                                        <td>3</td>
+                                        <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                        <td  class="td-actions">
+                                           <img src="./images/lock.svg" alt="lock" id="lock">
+                                           <img src="./images/lock-off.svg" alt="lock" id="lock-off">
+                                           <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                           <img src="./images/GuestsEye.svg" alt="show">
+                                        </td>
+                                     </tr>
+                                     <tr>
+                                        <td> 01</td>
+                                        <td class="td-user">
+                                           <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                        </td>
+                                        <td>Rossie52@yahoo.com</td>
+                                        <td>503-254-9294</td>
+                                        <td>5</td>
+                                        <td>3</td>
+                                        <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                        <td  class="td-actions">
+                                           <img src="./images/lock.svg" alt="lock" id="lock">
+                                           <img src="./images/lock-off.svg" alt="lock" id="lock-off">
+                                           <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                           <img src="./images/GuestsEye.svg" alt="show">
+                                        </td>
+                                     </tr>
+                                   </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                           </div>
+                        </section>
+                      </div>
+                      <div id="Invitations" class="b-tab">
+                        <section class="home-table">
+                           <div class="container-padding">
+                              <div class="home-table-data">
+                                 <div class="home-table-list">
+                                    <table class="table table-borderd table-hover">
+                                    <thead>
+                                          <tr>
+                                             <th> ID</th>
+                                             <th>Full name</th>
+                                             <th>E-mail</th>
+                                             <th>Job Title</th>
+                                             <th>Volunteer hours</th>
+                                             <th>Volunteer date</th>
+                                             <th>State</th>
+                                             <th>Status</th>
+                                             <th>Actions</th>
+                                          </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td> 01</td>
+                                          <td class="td-user">
+                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                          </td>
+                                          <td>Rossie52@yahoo.com</td>
+                                          <td>Global</td>
+                                          <td>5</td>
+                                          <td>22/02/2023</td>
+                                          <td>Dubai</td>
+                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                          <td  class="td-actions">
+                                             <img src="./images/new.svg" class="check-success" alt="new" data-bs-toggle="modal" data-bs-target="#proofModal">
+                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                             <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td> 01</td>
+                                          <td class="td-user">
+                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                          </td>
+                                          <td>Rossie52@yahoo.com</td>
+                                          <td>Global</td>
+                                          <td>5</td>
+                                          <td>22/02/2023</td>
+                                          <td>Dubai</td>
+                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                          <td  class="td-actions">
+                                             <img src="./images/new.svg" alt="new" data-bs-toggle="modal" data-bs-target="#proofModal">
+                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                             <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td> 01</td>
+                                          <td class="td-user">
+                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                          </td>
+                                          <td>Rossie52@yahoo.com</td>
+                                          <td>Global</td>
+                                          <td>5</td>
+                                          <td>22/02/2023</td>
+                                          <td>Dubai</td>
+                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                          <td  class="td-actions">
+                                             <img src="./images/new.svg" alt="new" data-bs-toggle="modal" data-bs-target="#proofModal">
+                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                             <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td> 01</td>
+                                          <td class="td-user">
+                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                          </td>
+                                          <td>Rossie52@yahoo.com</td>
+                                          <td>Global</td>
+                                          <td>5</td>
+                                          <td>22/02/2023</td>
+                                          <td>Dubai</td>
+                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                          <td  class="td-actions">
+                                             <img src="./images/new.svg" alt="new" class="check-success" data-bs-toggle="modal" data-bs-target="#proofModal">
+                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                             <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td> 01</td>
+                                          <td class="td-user">
+                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                          </td>
+                                          <td>Rossie52@yahoo.com</td>
+                                          <td>Global</td>
+                                          <td>5</td>
+                                          <td>22/02/2023</td>
+                                          <td>Dubai</td>
+                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                          <td  class="td-actions">
+                                             <img src="./images/new.svg" alt="new" data-bs-toggle="modal" data-bs-target="#proofModal">
+                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                             <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td> 01</td>
+                                          <td class="td-user">
+                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                          </td>
+                                          <td>Rossie52@yahoo.com</td>
+                                          <td>Global</td>
+                                          <td>5</td>
+                                          <td>22/02/2023</td>
+                                          <td>Dubai</td>
+                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                          <td  class="td-actions">
+                                             <img src="./images/new.svg" alt="new" class="check-success" data-bs-toggle="modal" data-bs-target="#proofModal">
+                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                             <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                    </table>
+                                 </div>
+                               </div>
+                           </div>
+                        </section>
+                      </div>
+                  
+                  </div>
+               </div>
+
+            </section>
+          
+         </main>
+   </div>
+
+</div>
+
+
+    <!-- Modal Delete -->
+    <div class="modal fade modal-delete" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0">
+            <img src="./images/Delete.gif" alt="Delete">
+            <h5>Delete</h5>
+            <p>Are you sure to delete the volunteer?</p>
+        </div>
+        <div class="modal-footer justify-content-center pt-0">
+            <button type="button" class="btn-delete" data-bs-dismiss="modal">Delete</button>
+            <button type="button"  class="btn-hide" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        
+        </div>
+        </div>
+    </div>
+   
+
+    <!-- Font Awesome Light JS  5.12-->
+    <script src="../icons/all.min.js"></script>
+    <script src="../icons/light.min.js"></script>
+   <!---Language Picker JS-->
+   <script src="../js/dropdown_lang.js"></script>
+   <!---Close and Open Sidebar in mobile-->
+   <script src="./js/sidebar.js"></script>
+   <!---Boostrap  5 JS-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   <!---Tabs JS--->
+   <script src="./js/tabs.js"></script>
+
+</body>     
+</html>

@@ -76,16 +76,16 @@ body{
    height: 31px;
  }
  .color-1{
-   background: #B4E5BC;
+   background: #B4E5BC !important;
  }
  .color-2{
-   background: #CCC1F0;
+   background: #CCC1F0 !important;
  }
  .color-3{
-   background: #F3ABA7;
+   background: #F3ABA7 !important;
  }
  .color-4{
-   background: #F4CE9B;
+   background: #F4CE9B !important;
  }
 @media (max-width:1000px) {
    .boxs .container-padding{
@@ -314,13 +314,17 @@ body{
    text-align: center;
    color: #000000;
  }
-
+.td-status{
+  display: flex;
+  justify-content: center;
+  min-height: 54px;
+  height: 100%;
+}
  .td-status .circle{
-   position: absolute;
    width: 10.77px;
    height: 10.7px;
    border-radius: 50%;
-   margin-left: 0px;
+   margin-right: 5px;
    display: block;
    margin-top:3px;
  }
@@ -615,4 +619,7 @@ body{
  
  .file--upload > label:active {
    background-color: hsl(204, 86%, 91%);
+ }
+ .modal-content{
+  border-radius: 15px !important;
  }
