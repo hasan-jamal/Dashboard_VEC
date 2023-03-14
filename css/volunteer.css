@@ -1,35 +1,4 @@
-.section-volunteer .container-padding{
- padding: 7px 20px;
-}
-.section-volunteer .section-volunteer-header h1{
-    font-family: 'Dubai Medium';
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 42px;
-    color: #151515;
-}
-.section-volunteer .section-volunteer-header a{
-    font-family: 'Dubai';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: rgba(0, 0, 0, 0.6);
-    text-decoration: none;
-}
-.section-volunteer .section-volunteer-header img{
-    width: 18px;
-    margin-top: -3px;
-    height: 16px;
-    filter: invert(72%) sepia(0%) saturate(1%) hue-rotate(21deg) brightness(88%) contrast(90%);
-}
-.section-volunteer .section-volunteer-header .fa-chevron-right{
-    width: 15px;
-    height: 13px;
-}
-.section-volunteer .section-volunteer-header .a-active{
-    color: #B68934;
-    font-family: 'Dubai Medium';
-}
+
 /* Tabs CSS */
 .b-tab {
     display: none;
@@ -38,7 +7,7 @@
   
   .b-tab.active {
     display: block;
-    transition: 0.3s;
+    transition: 0.5s;
   }
   
   .b-nav-tab {
@@ -199,9 +168,7 @@
    .section-filter form .box-input img{
     padding: 0 15px;
    }
-   .form-control:focus:focus{
-    box-shadow: none !important;
-   }
+
    .section-filter form select{
     background: rgba(217, 217, 217, 0.2);
     border: 0.5px solid #A3A3A3;
@@ -287,6 +254,10 @@
     }
     .section-volunteer .section-volunteer-filter{
         order: 1;
+    }
+    .section-volunteer .section-volunteer-filter .fa-search{
+        width: 14px;
+        height: 14px;
     }
     .section-volunteer .container-padding{
         padding: 7px;
@@ -579,23 +550,7 @@
     height: 15px;
     filter: invert(55%) sepia(0%) saturate(0%) hue-rotate(306deg) brightness(96%) contrast(93%);
  }
-.btn-send{
-    background: linear-gradient(268.66deg, #B79308 -15.62%, #B68934 101.46%);
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.14);
-    border-radius: 10px;
-    height: 48px;
-    font-family: 'Dubai';
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 34px;
-    text-align: center;
-    color: #FFFFFF;
-    width: 180.17px;
-    border: none;
- }
- .btn-send:hover{
-    background: linear-gradient(268.66deg, #8d7105 -15.62%, #7d5409 101.46%);
- }
+
  .modal-add-volunteer form .box-inputs{
     display: flex;
     align-items: center;
@@ -1322,5 +1277,92 @@
 @media (min-width: 576px){
     .modal-add-guests .modal-dialog {
         max-width: 655px !important;
+    }
+}
+/* Reports Pages  */
+.filter-top{
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 0px 15px 15px 15px;
+    margin-bottom: 20px;
+}
+.filter-top label{
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 8px;
+    color: #000000;
+}
+.filter-top .both-inputs{
+    display: flex;
+    align-items: center;
+}
+.filter-top .box-date{
+    background: rgba(217, 217, 217, 0.2);
+    border: 0.5px solid #A3A3A3;
+    border-radius: 10px;height: 50px;
+    min-width:131px;
+    width: 100%;
+    margin-right: 10px;
+}
+.filter-top .box-date span{
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    padding:0 5px 0 20px;
+}
+.filter-top .box-date input{
+    border: none;
+    background: transparent;
+    font-size: 12px;
+}
+.filter-top select{
+    height: 50px;
+    background: rgba(217, 217, 217, 0.2);
+    border: 0.5px solid #A3A3A3;
+    border-radius: 10px;
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: #000000;
+    width: 100%;
+    padding: 0 15px;
+}
+.filter-top .form-group button{
+    background: linear-gradient(250.81deg, #B68934 37.09%, #B79308 80.38%);
+    border: 0.5px solid #B79308;
+    border-radius: 10px; 
+    height: 42px;
+    width: 100%;
+    font-family: 'Dubai Medium';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+.filter-top .form-group button:hover{
+    background: linear-gradient(250.81deg, #cc9e48 37.09%, #d4b228 80.38%);
+    transform: scale(.9);
+}
+.border-rad{
+    border-radius: 15px !important;
+    margin-bottom: 20px;
+}
+.border-rad table td{
+    padding: 15px 0;
+}
+@media (max-width:1000px) {
+    .filter-top .both-inputs{
+        flex-direction: column;
+    }
+    .filter-top .both-inputs .box-date{
+       margin-bottom: 10px;
+    }    .filter-top .form-group button{
+      margin: 20px 0 10px 0;
     }
 }

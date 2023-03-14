@@ -77,10 +77,18 @@
                    </a>
                 </li>
                 <li>
-                   <a class="s-sidebar__nav-link" href="./Reports.html">
-                        <img src="./images/Reports.svg" alt="Reports">
-                        <span>Reports</span>
-                   </a>
+                  <a class="dropdown-btn s-sidebar__nav-link">
+                     <img src="./images/Reports.svg" alt="Reports" class="ReportsImage">
+                     <span>Reports</span>
+                     <img src="./images/arrow-drop.svg" alt="arrow" class="arrow" id="arrowDrop">
+                  </a>
+                   <div class="dropdown-container">
+                        <a href="./ReportsVolunteer.html" >Volunteer</a>
+                        <a href="./ReportsAgenda.html"  >Agenda</a>
+                        <a href="./ReportsEvent.html">Event</a>
+                        <a href="./ReportsEmployees.html">Employees</a>
+                        <a href="./ReportsGuests.html">Guests</a>
+                   </div>
                 </li>
                 <li class="li-dash li-setting">
                        <a class="s-sidebar__nav-link" href="./Settings.html">
@@ -321,147 +329,145 @@
                         <section class="home-table">
                            <div class="container-padding">
                               <div class="home-table-data">
-                          
-                           
-                              <div class="home-table-list">
-                                 <table class="table table-borderd table-hover">
-                                   <thead>
+                                 <div class="home-table-list">
+                                    <table class="table table-borderd table-hover">
+                                    <thead>
+                                          <tr>
+                                             <th> ID</th>
+                                             <th>Full name</th>
+                                             <th>E-mail</th>
+                                             <th>Mobile number</th>
+                                             <th>State</th>
+                                             <th>Address</th>
+                                             <th>Status</th>
+                                             <th>Actions</th>
+                                          </tr>
+                                    </thead>
+                                    <tbody>
                                        <tr>
-                                          <th> ID</th>
-                                          <th>Full name</th>
-                                          <th>E-mail</th>
-                                          <th>Mobile number</th>
-                                          <th>State</th>
-                                          <th>Address</th>
-                                          <th>Status</th>
-                                          <th>Actions</th>
+                                          <td> 01</td>
+                                          <td class="td-user">
+                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                          </td>
+                                          <td>Rossie52@yahoo.com</td>
+                                          <td>503-254-9294</td>
+                                          <td>Dubai</td>
+                                          <td>Khalifa street</td>
+                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                          <td  class="td-actions">
+                                             <img src="./images/lock.svg" alt="lock" id="lock">
+                                             <img src="./images/lock-off.svg" alt="lock" id="lock-off">
+                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                             <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
+                                          </td>
                                        </tr>
-                                   </thead>
-                                   <tbody>
-                                    <tr>
-                                       <td> 01</td>
-                                       <td class="td-user">
-                                          <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                                       </td>
-                                       <td>Rossie52@yahoo.com</td>
-                                       <td>503-254-9294</td>
-                                       <td>Dubai</td>
-                                       <td>Khalifa street</td>
-                                       <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
-                                       <td  class="td-actions">
-                                          <img src="./images/lock.svg" alt="lock" id="lock">
-                                          <img src="./images/lock-off.svg" alt="lock" id="lock-off">
-                                          <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                          <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td> 02</td>
-                                       <td class="td-user">
-                                          <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                                       </td>
-                                       <td>Rossie52@yahoo.com</td>
-                                       <td>503-254-9294</td>
-                                       <td>Dubai</td>
-                                       <td>Khalifa street</td>
-                                       <td class="td-status"><div class="circle" style="background: #CD0000;"></div> Rejected</td>
-                                       <td class="td-actions">
-                                          <img src="./images/lock.svg" alt="lock" id="lock">
-                                          <img src="./images/lock-off.svg" alt="lock" id="lock-off">
-                                          <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                          <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td> 03</td>
-                                       <td class="td-user">
-                                          <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                                       </td>
-                                       <td>Rossie52@yahoo.com</td>
-                                       <td>503-254-9294</td>
-                                       <td>Dubai</td>
-                                       <td>Khalifa street</td>
-                                       <td class="td-status"><div class="circle" style="background: #D3A500;"></div> Pending</td>
-                                       <td class="td-actions">
-                                          <img src="./images/lock.svg" alt="lock" id="lock" onclick="lockOn()">
-                                          <img src="./images/lock-off.svg" alt="lock" id="lock-off" onclick="lockOff()">
-                                          <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                          <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td> 04</td>
-                                       <td class="td-user">
-                                          <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                                       </td>
-                                       <td>Rossie52@yahoo.com</td>
-                                       <td>503-254-9294</td>
-                                       <td>Dubai</td>
-                                       <td>Khalifa street</td>
-                                       <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
-                                       <td class="td-actions">
-                                           <img src="./images/lock.svg" alt="lock" id="lock">
-                                           <img src="./images/lock-off.svg" alt="lock" id="lock-off">
-                                           <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
-                                           <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td> 05</td>
-                                       <td class="td-user">
-                                          <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                                       </td>
-                                       <td>Rossie52@yahoo.com</td>
-                                       <td>503-254-9294</td>
-                                       <td>Dubai</td>
-                                       <td>Khalifa street</td>
-                                       <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
-                                       <td class="td-actions">
-                                           <img src="./images/lock.svg" alt="lock" id="lock">
-                                           <img src="./images/lock-off.svg" alt="lock" id="lock-off">
-                                           <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
-                                           <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td> 06</td>
-                                       <td class="td-user">
-                                          <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                                       </td>
-                                       <td>Rossie52@yahoo.com</td>
-                                       <td>503-254-9294</td>
-                                       <td>Dubai</td>
-                                       <td>Khalifa street</td>
-                                       <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
-                                       <td class="td-actions">
-                                           <img src="./images/lock.svg" alt="lock" id="lock">
-                                           <img src="./images/lock-off.svg" alt="lock" id="lock-off">
-                                           <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
-                                           <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
-                                       </td>
-                                    </tr>
+                                       <tr>
+                                          <td> 02</td>
+                                          <td class="td-user">
+                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                          </td>
+                                          <td>Rossie52@yahoo.com</td>
+                                          <td>503-254-9294</td>
+                                          <td>Dubai</td>
+                                          <td>Khalifa street</td>
+                                          <td class="td-status"><div class="circle" style="background: #CD0000;"></div> Rejected</td>
+                                          <td class="td-actions">
+                                             <img src="./images/lock.svg" alt="lock" id="lock">
+                                             <img src="./images/lock-off.svg" alt="lock" id="lock-off">
+                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                             <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td> 03</td>
+                                          <td class="td-user">
+                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                          </td>
+                                          <td>Rossie52@yahoo.com</td>
+                                          <td>503-254-9294</td>
+                                          <td>Dubai</td>
+                                          <td>Khalifa street</td>
+                                          <td class="td-status"><div class="circle" style="background: #D3A500;"></div> Pending</td>
+                                          <td class="td-actions">
+                                             <img src="./images/lock.svg" alt="lock" id="lock" onclick="lockOn()">
+                                             <img src="./images/lock-off.svg" alt="lock" id="lock-off" onclick="lockOff()">
+                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                             <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td> 04</td>
+                                          <td class="td-user">
+                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                          </td>
+                                          <td>Rossie52@yahoo.com</td>
+                                          <td>503-254-9294</td>
+                                          <td>Dubai</td>
+                                          <td>Khalifa street</td>
+                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                          <td class="td-actions">
+                                             <img src="./images/lock.svg" alt="lock" id="lock">
+                                             <img src="./images/lock-off.svg" alt="lock" id="lock-off">
+                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
+                                             <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td> 05</td>
+                                          <td class="td-user">
+                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                          </td>
+                                          <td>Rossie52@yahoo.com</td>
+                                          <td>503-254-9294</td>
+                                          <td>Dubai</td>
+                                          <td>Khalifa street</td>
+                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                          <td class="td-actions">
+                                             <img src="./images/lock.svg" alt="lock" id="lock">
+                                             <img src="./images/lock-off.svg" alt="lock" id="lock-off">
+                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
+                                             <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td> 06</td>
+                                          <td class="td-user">
+                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                          </td>
+                                          <td>Rossie52@yahoo.com</td>
+                                          <td>503-254-9294</td>
+                                          <td>Dubai</td>
+                                          <td>Khalifa street</td>
+                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                          <td class="td-actions">
+                                             <img src="./images/lock.svg" alt="lock" id="lock">
+                                             <img src="./images/lock-off.svg" alt="lock" id="lock-off">
+                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
+                                             <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
+                                          </td>
+                                       </tr>
 
-                                    <tr>
-                                       <td> 07</td>
-                                       <td class="td-user">
-                                          <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                                       </td>
-                                       <td>Rossie52@yahoo.com</td>
-                                       <td>503-254-9294</td>
-                                       <td>Dubai</td>
-                                       <td>Khalifa street</td>
-                                       <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
-                                       <td class="td-actions">
-                                           <img src="./images/lock.svg" alt="lock" id="lock">
-                                           <img src="./images/lock-off.svg" alt="lock" id="lock-off">
-                                           <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
-                                           <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
-                                       </td>
-                                    </tr>
-                                   </tbody>
-                                 </table>
-                              </div>
-                           </div>
+                                       <tr>
+                                          <td> 07</td>
+                                          <td class="td-user">
+                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
+                                          </td>
+                                          <td>Rossie52@yahoo.com</td>
+                                          <td>503-254-9294</td>
+                                          <td>Dubai</td>
+                                          <td>Khalifa street</td>
+                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
+                                          <td class="td-actions">
+                                             <img src="./images/lock.svg" alt="lock" id="lock">
+                                             <img src="./images/lock-off.svg" alt="lock" id="lock-off">
+                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
+                                             <a href="./VolunteerView.html"><img src="./images/eye.svg" alt="show"></a>  
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                    </table>
+                                 </div>
+                             </div>
                            </div>
                         </section>
                       </div>

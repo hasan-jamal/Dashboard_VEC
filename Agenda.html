@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEC Dashboard</title>
+    <link rel="icon" href="">
+    <!--Style CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/volunteer.css">
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome Light CSS  5.12-->
+    <link rel="stylesheet" href="../icons/all.min.css">
+    <link rel="stylesheet" href="../icons/light.min.css">
+    <!---Language Picker CSS--->
+    <link rel="stylesheet" href="./css/languagePicker.css">
+</head>
+
+<body>
+    <div class="s-layout ">
+        <!-- Sidebar -->
+        <div class="s-layout__sidebar ">
+          <a class="s-sidebar__trigger" onclick="openSidebar()" id="sidebar__trigger">
+             <i class="fa fa-bars"></i>
+          </a>
+            <nav class="s-sidebar__nav force-overflow-nav" id="sidebar-nav">
+               <button id="btnClose" onclick="closeSidebar()">
+                  <i class="fal fa-times"></i>
+               </button>
+                <ul>
+                   <li>
+                       <div class="search-nav">
+                               <input type="text" class="form-control">
+                               <div class="border-bottom"></div>
+                       </div>
+                   </li>
+                   <li>
+                     <a class="s-sidebar__nav-link " href="./index.html">
+                      <img src="./images/home2.svg" alt="Dashboard" >
+                        <span>Dashboard</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="s-sidebar__nav-link " href="./Volunteer.html">
+                      <img src="./images/Volunteer.svg" alt="Volunteer">
+                      <span>Volunteer</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="s-sidebar__nav-link" href="./Agenda.html">
+                         <img src="./images/Agenda.svg" alt="Agenda">
+                          <span>Agenda</span>
+                     </a>
+                  </li>
+                  <li>
+                      <a class="s-sidebar__nav-link" href="./Event.html">
+                          <img src="./images/Event.svg" alt="Event">
+                          <span>Event</span>
+                      </a>
+                   </li>
+                   <li>
+                      <a class="s-sidebar__nav-link" href="./Employees.html">
+                          <img src="./images/Employees.svg" alt="Employees">
+                           <span>Employees</span>
+                      </a>
+                   </li>
+                   <li>
+                      <a class="s-sidebar__nav-link " href="./Guests.html">
+                           <img src="./images/Guests.svg" alt="Guests">
+                           <span>Guests</span>
+                      </a>
+                   </li>
+                 
+                   <li>
+                     <a class="dropdown-btn s-sidebar__nav-link ">
+                        <img src="./images/Reports.svg" alt="Reports" class="ReportsImage">
+                        <span>Reports</span>
+                        <img src="./images/arrow-drop.svg" alt="arrow" class="arrow" id="arrowDrop">
+                     </a>
+                      <div class="dropdown-container">
+                           <a href="./ReportsVolunteer.html">Volunteer</a>
+                           <a href="./ReportsAgenda.html" class="active">Agenda</a>
+                           <a href="./ReportsEvent.html" >Event</a>
+                           <a href="./ReportsEmployees.html" >Employees</a>
+                           <a href="./ReportsGuests.html"  >Guests</a>
+                      </div>
+                   </li>
+                   
+                   <li class="li-dash li-setting">
+                          <a class="s-sidebar__nav-link" href="./Settings.html">
+                             <img src="./images/setting.svg" alt="setting">
+                             <span>Settings</span>
+                       </a>
+                   </li>
+                    <li class="li-dash">
+                        <a class="s-sidebar__nav-link" href="#0">
+                           <img src="./images/logout.svg" alt="logout">
+                           <span>Log out</span>
+                          </a>
+                     </li>
+                </ul>
+               
+             </nav>
+        </div>
+        
+        <!-- Content -->
+         <main class="s-layout__content">
+           
+            <section class="header-nav ">
+               <div class="row align-items-center">
+                  <div class="col-md-6">
+                     <div class="header-nav-text">
+                        <p>Hi Sultan bin Fahd,</p>
+                        <h4>Welcome to EVC !</h4>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     
+               <div class="header-nav-section-two">
+                  <div class="js">
+                        <div class="language-picker js-language-picker" data-trigger-class="btn btn--subtle">
+                           <form action="" class="language-picker__form">
+                           <label for="language-picker-select">Select your language</label>
+                           <select name="language-picker-select" id="language-picker-select">
+                              <option lang="de" value="arabic">Arabic</option>
+                              <option lang="en" value="english" selected>English</option>
+                           </select>
+                           </form>
+                     </div>
+                  </div>
+                  <div class = "notification">
+                     <a href = "#">
+                     <div class = "notBtn" href = "#">
+                       <!--Number supports double digets and automaticly hides itself when there is nothing between divs -->
+                       <div class = "number">4</div>
+                       <i class="fal fa-bell"></i>
+                         <div class = "box">
+                           <div class = "display">
+                             <div class = "nothing"> 
+                               <i class="fas fa-child stick"></i> 
+                               <div class = "cent">Looks Like your all caught up!</div>
+                             </div>
+                             <div class = "cont"><!-- Fold this div and try deleting evrything inbetween -->
+                                <div class = "sec new">
+                                  <a href = "" class="message-style">
+                                    <div class = "profCont">
+                                      <img class = "profile" src = "https://c1.staticflickr.com/5/4007/4626436851_5629a97f30_b.jpg">
+                                   </div>
+                                    <div class = "txt">Reymouth</div>
+                                    <div class = "txt-sub">Omnis minus illo saepe omnis saepe.</div>
+                                  </a>
+                               </div>
+                               <div class = "sec new">
+                                 <a href = "" class="message-style">
+                                   <div class = "profCont">
+                                     <img class = "profile" src = "https://c1.staticflickr.com/5/4007/4626436851_5629a97f30_b.jpg">
+                                  </div>
+                                   <div class = "txt">Reymouth</div>
+                                   <div class = "txt-sub">Omnis minus illo saepe omnis saepe.</div>
+                                 </a>
+                              </div>
+                              <div class = "sec new">
+                                 <a href = "" class="message-style">
+                                   <div class = "profCont">
+                                     <img class = "profile" src = "https://c1.staticflickr.com/5/4007/4626436851_5629a97f30_b.jpg">
+                                  </div>
+                                   <div class = "txt">Reymouth</div>
+                                   <div class = "txt-sub">Omnis minus illo saepe omnis saepe.</div>
+                                 </a>
+                              </div>
+                              <div class = "sec new">
+                                 <a href = "" class="message-style">
+                                   <div class = "profCont">
+                                     <img class = "profile" src = "https://c1.staticflickr.com/5/4007/4626436851_5629a97f30_b.jpg">
+                                  </div>
+                                   <div class = "txt">Reymouth</div>
+                                   <div class = "txt-sub">Omnis minus illo saepe omnis saepe.</div>
+                                 </a>
+                              </div>
+                            </div>
+                           </div>
+                        </div>
+                     </div>
+                       </a>
+                   </div>
+                   <div class="d-flex align-items-center style-user">
+                     <div class="text-user">
+                        <h5>Sultan bin Fahd,</h5>
+                        <p>Admin</p>
+                     </div>
+                     <div src="" alt="user" class="img-user"></div>
+                     <div class="point-color"></div>
+                   </div>
+               </div>
+          
+                  </div>
+               </div>
+            </section>
+         
+          
+          
+         </main>
+   </div>
+
+</div>
+
+
+    <!-- Modal Delete -->
+    <div class="modal fade modal-delete" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0">
+            <img src="./images/Delete.gif" alt="Delete">
+            <h5>Delete</h5>
+            <p>Are you sure to delete the volunteer?</p>
+        </div>
+        <div class="modal-footer justify-content-center pt-0">
+            <button type="button" class="btn-delete" data-bs-dismiss="modal">Delete</button>
+            <button type="button"  class="btn-hide" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        
+        </div>
+        </div>
+    </div>
+    <!--Modal Add guests--->
+  <div class="modal fade modal-add-guests" id="addGuestsModal" tabindex="-1" aria-labelledby="addGuestsModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+         <div class="modal-header">
+            <div class="modal-header-flex">
+               <img src="./images/char.svg" alt="char">
+               <input type="text" value="2" readonly>
+                <span>/</span>
+               <input type="text" value="5" readonly>
+            </div>
+            <button><i class="fal fa-crown"></i></button>
+         </div>
+         <div class="modal-body pt-0">
+            <form action="">
+               <div class="row">
+                  <div class="col-md-12 mb-3">
+                     <div class='file file--upload'>
+                        <label for='input-file'>
+                          <img src="../images/uploadImage.svg" alt="uploadImage" >
+                              <div>
+                                    <p>Upload a profile Image</p> 
+                                    <span>PNG or JPG</span>
+                              </div>
+                        </label>
+                        <input id='input-file' type='file' />
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="form-group">
+                        <label for="nameGuest">Name guest</label>
+                        <div class="box-input">
+                           <input class="form-control" type="text" placeholder="Hazza bin Mahmoud" id="nameGuest" name="nameGuest">
+                           <span><i class="fal fa-user"></i></span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <div class="box-input">
+                           <input class="form-control" type="email" placeholder="info@imshsh.com" id="email" name="email">
+                           <img src="./images/at-sign.svg" alt="@">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="form-group">
+                        <label for="mobileNumber">Mobile number</label>
+                        <div class="box-input">
+                           <input class="form-control" type="number" placeholder="000000000000" id="mobileNumber" name="mobileNumber">
+                           <img src="./images/phone-call.svg" alt="@">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="form-group">
+                        <label for="country">Country</label>
+                        <div class="box-input">
+                           <input class="form-control" type="text" placeholder="000000000000" id="country" name="country">
+                           <img src="./images/map.svg" alt="@">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="form-group">
+                        <label for="country">Employee <span>(optional)</span></label>
+                        <select name="" id="" >
+                           <option value="" selected>Margarita Schmidt</option>
+                           <option value="" >Margarita Schmidt</option>
+                           <option value="" >Margarita Schmidt</option>
+                           <option value="" >Margarita Schmidt</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="form-group">
+                        <label for="country">Event</label>
+                        <select name="" id="" >
+                           <option value="" selected>Central Paradigm Executive</option>
+                           <option value="" >Central Paradigm Executive</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="col-md-12">
+                     <div class="form-group m-auto">
+                        <button class="btn-send">Send</button>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+      
+      
+      </div>
+   </div>
+</div>
+
+    <!-- Font Awesome Light JS  5.12-->
+    <script src="../icons/all.min.js"></script>
+    <script src="../icons/light.min.js"></script>
+   <!---Language Picker JS-->
+   <script src="../js/dropdown_lang.js"></script>
+   <!---Close and Open Sidebar in mobile-->
+   <script src="./js/sidebar.js"></script>
+   <!---Boostrap  5 JS-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   <!---Tabs JS--->
+   <script src="./js/tabs.js"></script>
+</body>     
+</html>

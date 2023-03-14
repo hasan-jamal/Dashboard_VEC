@@ -593,14 +593,12 @@
    padding-top: 5px;
    padding: 7px 0px 7px 60px;
    text-decoration: none;
-   border-left: 4px solid #B68934;
-    background: linear-gradient(265.73deg, rgba(182, 137, 52, 0.8) -17.88%, rgba(235, 235, 235, 0.3) 47.1%);
  }
+ .dropdown-container .active-drop,
  .dropdown-container a:hover{
    color: #B68934 !important;
- }
- .dropdown-container .active{
-   color: #B68934 !important;
+   border-left: 4px solid #B68934;
+   background: linear-gradient(265.73deg, rgba(182, 137, 52, 0.8) -17.88%, rgba(235, 235, 235, 0.3) 47.1%);
  }
  .dropdown-btn .arrow{
    width: 12px;
