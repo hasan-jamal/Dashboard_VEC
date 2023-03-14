@@ -70,24 +70,24 @@
                       </a>
                    </li>
                    <li>
-                      <a class="s-sidebar__nav-link active" href="./Guests.html">
+                      <a class="s-sidebar__nav-link " href="./Guests.html">
                            <img src="./images/Guests.svg" alt="Guests">
                            <span>Guests</span>
                       </a>
                    </li>
                  
                    <li>
-                     <a class="dropdown-btn s-sidebar__nav-link">
+                     <a class="dropdown-btn s-sidebar__nav-link active">
                         <img src="./images/Reports.svg" alt="Reports" class="ReportsImage">
                         <span>Reports</span>
                         <img src="./images/arrow-drop.svg" alt="arrow" class="arrow" id="arrowDrop">
                      </a>
-                      <div class="dropdown-container">
+                      <div class="dropdown-container" style="display: flex;">
                            <a href="./ReportsVolunteer.html">Volunteer</a>
                            <a href="./ReportsAgenda.html">Agenda</a>
-                           <a href="./ReportsEvent.html">Event</a>
+                           <a href="./ReportsEvent.html" class="active">Event</a>
                            <a href="./ReportsEmployees.html">Employees</a>
-                           <a href="./ReportsGuests.html">Guests</a>
+                           <a href="./ReportsGuests.html"  >Guests</a>
                       </div>
                    </li>
                    
@@ -202,162 +202,7 @@
                </div>
             </section>
          
-            <section class="section-volunteer">
-               <div class="container-padding">
-                  <div class="section-volunteer-header">
-                     <h1>Guests</h1>
-                     <p>
-                        <a href="./index.html"><img src="./images/home2.svg" alt="home2"> Dashboard</a>
-                        <span><i class="fal fa-chevron-right"></i></span>
-                        <a href="./Guests.html" class="a-active">Guests</a>
-                     </p>
-                   
-                  </div>
-                  <div class="section-volunteer-tabs mb-3">
-                     <div class="tab-order"></div>
-                     <div class="section-volunteer-filter">
-                        <div class="section-volunteer-search">
-                           <i class="fal fa-search"></i>
-                           <input type="text" class="form-control" placeholder="Search for Guests">
-                        </div>
-                        <button type="button" id="btnFilter" class="btn-export" onclick="openFilter()">
-                            <i class="fal fa-file-export me-2"></i>
-                           Export excel
-                        </button>
-                     </div>
-                    
-                  </div>
-                  <div class="section-vlounteer-content section-employees">   
-                        <section class="home-table">
-                           <div class="container-padding">
-                              <div class="home-table-data">
-                                 <div class="home-table-list">
-                                    <table class="table table-borderd table-hover">
-                                    <thead>
-                                          <tr>
-                                             <th> ID</th>
-                                             <th>Full name</th>
-                                             <th>E-mail</th>
-                                             <th>Mobile number</th>
-                                             <th>Country</th>
-                                             <th>Invitations</th>
-                                             <th>Approved</th>
-                                             <th>Actions</th>
-                                          </tr>
-                                    </thead>
-                                    <tbody>
-                                       <tr>
-                                          <td> 01</td>
-                                          <td class="td-user">
-                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                                          </td>
-                                          <td>Rossie52@yahoo.com</td>
-                                          <td>503-254-9294</td>
-                                          <td>5</td>
-                                          <td>3</td>
-                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
-                                          <td  class="td-actions">
-                                             <img src="./images/lock.svg" alt="lock" id="lock">
-                                             <img src="./images/lock-off.svg" alt="lock" id="lock-off">
-                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                             <img src="./images/GuestsEye.svg" alt="show" data-bs-toggle="modal" data-bs-target="#addGuestsModal">
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td> 02</td>
-                                          <td class="td-user">
-                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                                          </td>
-                                          <td>Rossie52@yahoo.com</td>
-                                          <td>503-254-9294</td>
-                                          <td>5</td>
-                                          <td>3</td>
-                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
-                                          <td  class="td-actions">
-                                             <img src="./images/lock.svg" alt="lock" id="lock">
-                                             <img src="./images/lock-off.svg" alt="lock" id="lock-off">
-                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                             <img src="./images/GuestsEye.svg" alt="show">
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td> 03</td>
-                                          <td class="td-user">
-                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                                          </td>
-                                          <td>Rossie52@yahoo.com</td>
-                                          <td>503-254-9294</td>
-                                          <td>5</td>
-                                          <td>3</td>
-                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
-                                          <td  class="td-actions">
-                                             <img src="./images/lock.svg" alt="lock" id="lock">
-                                             <img src="./images/lock-off.svg" alt="lock" id="lock-off">
-                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                             <img src="./images/GuestsEye.svg" alt="show">
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td> 04</td>
-                                          <td class="td-user">
-                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                                          </td>
-                                          <td>Rossie52@yahoo.com</td>
-                                          <td>503-254-9294</td>
-                                          <td>5</td>
-                                          <td>3</td>
-                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
-                                          <td  class="td-actions">
-                                             <img src="./images/lock.svg" alt="lock" id="lock">
-                                             <img src="./images/lock-off.svg" alt="lock" id="lock-off">
-                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                             <img src="./images/GuestsEye.svg" alt="show">
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td> 05</td>
-                                          <td class="td-user">
-                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                                          </td>
-                                          <td>Rossie52@yahoo.com</td>
-                                          <td>503-254-9294</td>
-                                          <td>5</td>
-                                          <td>3</td>
-                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
-                                          <td  class="td-actions">
-                                             <img src="./images/lock.svg" alt="lock" id="lock">
-                                             <img src="./images/lock-off.svg" alt="lock" id="lock-off">
-                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                             <img src="./images/GuestsEye.svg" alt="show">
-                                          </td>
-                                       </tr>
-                                       <tr>
-                                          <td> 06</td>
-                                          <td class="td-user">
-                                             <img src="./images/user.png" alt=""> Greg Ullrich Jr.
-                                          </td>
-                                          <td>Rossie52@yahoo.com</td>
-                                          <td>503-254-9294</td>
-                                          <td>5</td>
-                                          <td>3</td>
-                                          <td class="td-status"><div class="circle" style="background: #197701;"></div> Approved</td>
-                                          <td  class="td-actions">
-                                             <img src="./images/lock.svg" alt="lock" id="lock">
-                                             <img src="./images/lock-off.svg" alt="lock" id="lock-off">
-                                             <img src="./images/delete.svg" alt="delete" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                                             <img src="./images/GuestsEye.svg" alt="show">
-                                          </td>
-                                       </tr>
-                                    </tbody>
-                                    </table>
-                                 </div>
-                           </div>
-                           </div>
-                        </section>
-                  </div>
-               </div>
-
-            </section>
+          
           
          </main>
    </div>

@@ -16,3 +16,21 @@ function myFunction(x) {
    var x = window.matchMedia("(max-width: 700px)")
    myFunction(x)
    x.addListener(myFunction) 
+
+   // DropDown Sidebar 
+   var dropdown = document.getElementsByClassName("dropdown-btn");
+   var dropdownArrow = document.getElementById("arrowDrop");
+   console.log(dropdownArrow);
+   var i;
+   for (i = 0; i < dropdown.length; i++) {
+       dropdown[i].addEventListener("click", function() {
+       var dropdownContent = this.nextElementSibling;
+       if (dropdownContent.style.display === "flex") {
+         dropdownContent.style.display = "none";
+         dropdownArrow.style.transform = "rotate(180deg)";
+       } else {
+         dropdownContent.style.display = "flex";
+         dropdownArrow.style.transform = "rotate(0deg)";
+       }
+     });
+   } 

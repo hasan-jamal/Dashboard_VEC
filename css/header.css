@@ -33,19 +33,49 @@
    margin-right: 40px;
    margin-left: 10px;
  }
+
+ .force-overflow-nav
+{
+	min-height: 100vh;
+   overflow-x:none;
+}
  .s-sidebar__nav {
     position: fixed;
     z-index: 1000;
     top: 0;
     left: -260px;
-    overflow: auto;
+    overflow-y: scroll;
+    overflow-x:hidden;
     transition: all .3s ease-in;
     width: 260px;
     background: #FFFFFF;
     height: 100vh;
-    
     color: rgba(255, 255, 255, 0.7);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ }
+
+/*
+ *  STYLE 2
+ */
+
+ #sidebar-nav::-webkit-scrollbar-track
+ {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+ }
+ 
+ #sidebar-nav::-webkit-scrollbar
+ {
+    width: 5px;
+    background-color: #F5F5F5;
+ }
+ 
+ #sidebar-nav::-webkit-scrollbar-thumb
+ {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: rgb(182, 137, 52);
  }
  
  .s-sidebar__nav:hover,
@@ -127,7 +157,7 @@
    height: 20px;
  }
  .s-sidebar__nav-link span{
-   font-family: 'Dubai';
+   font-family: 'Dubai Medium';
    font-weight: 500;
    font-size: 18px;
    line-height: 27px;
@@ -520,4 +550,63 @@
       left: -120px;
       z-index: 100;
    }
+ }
+ /* Style the sidenav links and the dropdown button */
+ .dropdown-btn {
+   position: relative;
+   padding: 0 20px;
+   font-family: 'Dubai Medium';
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 27px;
+   color: rgba(0, 0, 0, 0.6);
+   padding-top: 5px;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   width: 100%;
+   height: 44px;
+   margin-top: 10px;
+   transition: 0.4s;
+   text-decoration: none;
+   cursor: pointer;
+   transition: 0.4s;
+ }
+ .dropdown-btn .ReportsImage{
+   margin-right: 20px;
+   width: 20px;
+   height: 20px;
+ }
+ /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+   cursor: pointer;
+   display: none;
+   flex-direction: column;
+ }
+ 
+ .dropdown-container a{
+   font-family: 'Dubai Medium';
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 27px;
+   color: rgba(0, 0, 0, 0.6);
+   padding-top: 5px;
+   padding: 7px 0px 7px 60px;
+   text-decoration: none;
+   border-left: 4px solid #B68934;
+    background: linear-gradient(265.73deg, rgba(182, 137, 52, 0.8) -17.88%, rgba(235, 235, 235, 0.3) 47.1%);
+ }
+ .dropdown-container a:hover{
+   color: #B68934 !important;
+ }
+ .dropdown-container .active{
+   color: #B68934 !important;
+ }
+ .dropdown-btn .arrow{
+   width: 12px;
+   height: 12px;
+   position:absolute;
+   right: 0px;
+   transition: 0.43s;
+   transform: rotate(180deg);
  }
