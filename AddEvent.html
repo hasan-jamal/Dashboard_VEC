@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEC Dashboard</title>
+    <link rel="icon" href="">
+    <!--Style CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/events.css">
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome Light CSS  5.12-->
+    <link rel="stylesheet" href="../icons/all.min.css">
+    <link rel="stylesheet" href="../icons/light.min.css">
+    <!---Language Picker CSS--->
+    <link rel="stylesheet" href="./css/languagePicker.css">
+</head>
+
+<body>
+   <div class="overShadow" id="overShadow"></div>
+    <div class="s-layout">
+        <!-- Sidebar -->
+        <div class="s-layout__sidebar">
+          <a class="s-sidebar__trigger" onclick="openSidebar()" id="sidebar__trigger">
+             <i class="fa fa-bars"></i>
+          </a>
+          <nav class="s-sidebar__nav" id="sidebar-nav">
+            <button id="btnClose" onclick="closeSidebar()">
+               <i class="fal fa-times"></i>
+            </button>
+             <ul>
+                <li>
+                    <div class="search-nav">
+                            <input type="text" class="form-control">
+                            <div class="border-bottom"></div>
+                    </div>
+                </li>
+                <li>
+                  <a class="s-sidebar__nav-link " href="./index.html">
+                   <img src="./images/home2.svg" alt="Dashboard" >
+                     <span>Dashboard</span>
+                  </a>
+               </li>
+               <li>
+                  <a class="s-sidebar__nav-link " href="./Volunteer.html">
+                   <img src="./images/Volunteer.svg" alt="Volunteer">
+                   <span>Volunteer</span>
+                  </a>
+               </li>
+               <li>
+                  <a class="s-sidebar__nav-link" href="./Agenda.html">
+                      <img src="./images/Agenda.svg" alt="Agenda">
+                       <span>Agenda</span>
+                  </a>
+               </li>
+               <li>
+                   <a class="s-sidebar__nav-link active" href="./Event.html">
+                       <img src="./images/Event.svg" alt="Event">
+                       <span>Event</span>
+                   </a>
+                </li>
+                <li>
+                   <a class="s-sidebar__nav-link" href="./Employees.html">
+                       <img src="./images/Employees.svg" alt="Employees">
+                        <span>Employees</span>
+                   </a>
+                </li>
+                <li>
+                   <a class="s-sidebar__nav-link" href="./Guests.html">
+                        <img src="./images/Guests.svg" alt="Guests">
+                        <span>Guests</span>
+                   </a>
+                </li>
+                <li>
+                  <a class="dropdown-btn s-sidebar__nav-link">
+                     <img src="./images/Reports.svg" alt="Reports" class="ReportsImage">
+                     <span>Reports</span>
+                     <img src="./images/arrow-drop.svg" alt="arrow" class="arrow" id="arrowDrop">
+                  </a>
+                   <div class="dropdown-container" >
+                        <a href="./ReportsVolunteer.html" >Volunteer</a>
+                        <a href="./ReportsAgenda.html"  >Agenda</a>
+                        <a href="./ReportsEvent.html">Event</a>
+                        <a href="./ReportsEmployees.html">Employees</a>
+                        <a href="./ReportsGuests.html">Guests</a>
+                   </div>
+                </li>
+                <li class="li-dash li-setting">
+                       <a class="s-sidebar__nav-link" href="./Settings.html">
+                          <img src="./images/setting.svg" alt="setting">
+                          <span>Settings</span>
+                    </a>
+                </li>
+                 <li class="li-dash">
+                     <a class="s-sidebar__nav-link" href="#0">
+                        <img src="./images/logout.svg" alt="logout">
+                        <span>Log out</span>
+                       </a>
+                  </li>
+             </ul>
+            
+          </nav>
+        
+        </div>
+        
+        <!-- Content -->
+         <main class="s-layout__content">
+           
+            <section class="header-nav ">
+               <div class="row align-items-center">
+                  <div class="col-md-6">
+                     <div class="header-nav-text">
+                        <p>Hi Sultan bin Fahd,</p>
+                        <h4>Welcome to EVC !</h4>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     
+               <div class="header-nav-section-two">
+                  <div class="js">
+                        <div class="language-picker js-language-picker" data-trigger-class="btn btn--subtle">
+                           <form action="" class="language-picker__form">
+                           <label for="language-picker-select">Select your language</label>
+                           <select name="language-picker-select" id="language-picker-select">
+                              <option lang="de" value="arabic">Arabic</option>
+                              <option lang="en" value="english" selected>English</option>
+                           </select>
+                           </form>
+                     </div>
+                  </div>
+                  <div class = "notification">
+                     <a href = "#">
+                     <div class = "notBtn" href = "#">
+                       <!--Number supports double digets and automaticly hides itself when there is nothing between divs -->
+                       <div class = "number">4</div>
+                       <i class="fal fa-bell"></i>
+                         <div class = "box">
+                           <div class = "display">
+                             <div class = "nothing"> 
+                               <i class="fas fa-child stick"></i> 
+                               <div class = "cent">Looks Like your all caught up!</div>
+                             </div>
+                             <div class = "cont"><!-- Fold this div and try deleting evrything inbetween -->
+                                <div class = "sec new">
+                                  <a href = "" class="message-style">
+                                    <div class = "profCont">
+                                      <img class = "profile" src = "https://c1.staticflickr.com/5/4007/4626436851_5629a97f30_b.jpg">
+                                   </div>
+                                    <div class = "txt">Reymouth</div>
+                                    <div class = "txt-sub">Omnis minus illo saepe omnis saepe.</div>
+                                  </a>
+                               </div>
+                               <div class = "sec new">
+                                 <a href = "" class="message-style">
+                                   <div class = "profCont">
+                                     <img class = "profile" src = "https://c1.staticflickr.com/5/4007/4626436851_5629a97f30_b.jpg">
+                                  </div>
+                                   <div class = "txt">Reymouth</div>
+                                   <div class = "txt-sub">Omnis minus illo saepe omnis saepe.</div>
+                                 </a>
+                              </div>
+                              <div class = "sec new">
+                                 <a href = "" class="message-style">
+                                   <div class = "profCont">
+                                     <img class = "profile" src = "https://c1.staticflickr.com/5/4007/4626436851_5629a97f30_b.jpg">
+                                  </div>
+                                   <div class = "txt">Reymouth</div>
+                                   <div class = "txt-sub">Omnis minus illo saepe omnis saepe.</div>
+                                 </a>
+                              </div>
+                              <div class = "sec new">
+                                 <a href = "" class="message-style">
+                                   <div class = "profCont">
+                                     <img class = "profile" src = "https://c1.staticflickr.com/5/4007/4626436851_5629a97f30_b.jpg">
+                                  </div>
+                                   <div class = "txt">Reymouth</div>
+                                   <div class = "txt-sub">Omnis minus illo saepe omnis saepe.</div>
+                                 </a>
+                              </div>
+                            </div>
+                           </div>
+                        </div>
+                     </div>
+                       </a>
+                   </div>
+                   <div class="d-flex align-items-center style-user">
+                     <div class="text-user">
+                        <h5>Sultan bin Fahd,</h5>
+                        <p>Admin</p>
+                     </div>
+                     <div src="" alt="user" class="img-user"></div>
+                     <div class="point-color"></div>
+                   </div>
+               </div>
+          
+                  </div>
+               </div>
+            </section>
+        
+            <section class="section-volunteer">
+                <div class="container-padding">
+                   <div class="section-volunteer-header">
+                      <h1>Event</h1>
+                      <p>
+                         <a href="./index.html"><img src="./images/home2.svg" alt="home2"> Dashboard</a>
+                         <span><i class="fal fa-chevron-right"></i></span>
+                         <a href="./Event.html" >Event</a>
+                         <span><i class="fal fa-chevron-right"></i></span>
+                         <a href="./AddEvent.html" class="a-active">Event Info</a>
+                      </p>
+                   </div>
+                </div>
+            </section>
+            <section class="section-add-event">
+                <div class="container-padding">
+                    <div class="add-event">
+                            <h4>Event Info  :</h4>
+                            <form action="">
+                                <div class="row border-bottom pb-3">
+                                    <div class="col-md-12">
+                                        <div class='file file--upload'>
+                                            <label for='input-file'>
+                                                <img src="../images/uploadImage.svg" alt="uploadImage" >
+                                                <div>
+                                                    <p>Upload a profile Image</p> 
+                                                    <span>PNG or JPG</span>
+                                                </div>
+                                            </label>
+                                            <input id='input-file' type='file' />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="title">Title</label>
+                                            <input type="text" id="title" name="title" class="form-control input-event">
+                                        </div> 
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="titleAr">Title</label>
+                                            <input type="text" id="titleAr" name="titleAr" class="form-control input-event">
+                                        </div> 
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="title">Location</label>
+                                            <div class="box-input">
+                                                <input type="text" id="title" name="title" class="form-control">
+                                                <img src="./images/locationModal.svg" alt="location-event">
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="description">Description</label>
+                                            <textarea id="description" name="description" class="form-control"></textarea>
+                                        </div> 
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="descriptionAr">Description</label>
+                                            <textarea id="descriptionAr" name="descriptionAr" class="form-control"></textarea>
+                                        </div> 
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="date">Date</label>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="box-date me-3">
+                                                    <span>From</span>
+                                                    <input type="date" id="startDate" name="startDate" class="form-control">
+                                                </div>
+                                                <div class="box-date">
+                                                    <span>To</span>
+                                                    <input type="date" id="endDate" name="endDate" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="date">Times</label>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="box-date me-3">
+                                                    <span>From</span>
+                                                    <input type="time" id="startTime" name="startTime" class="form-control">
+                                                </div>
+                                                <div class="box-date">
+                                                    <span>To</span>
+                                                    <input type="time" id="endTime" name="endTime" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+
+                            </form>
+                            <h2>Event schedule :</h2>
+                            <div class="row align-items-center border-bottom pb-3">
+                                <div class="col-md-5">
+                                    <form action="" class="form-Event-schedule">
+                                    <div class="form-group">
+                                        <label for="times">Times</label>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="box-date me-3">
+                                                <span>From</span>
+                                                <input type="time" id="startTime" name="startTime" class="form-control">
+                                            </div>
+                                            <div class="box-date">
+                                                <span>To</span>
+                                                <input type="time" id="endTime" name="endTime" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="form-group">
+                                        <label for="description">Description</label>
+                                        <textarea id="description" name="description" class="form-control"></textarea>
+                                    </div> 
+                                     <div class="form-group">
+                                         <button class="btn-send">Add</button>
+                                     </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-7" id="boxs-events">
+                                    <div class="boxs-events">
+                                        <div class="box-event-new">
+                                            <div class="d-flex align-items-center justify-content-between box-event-flex">
+                                                <div class="align-element">
+                                                   <img src="/images/clock.svg" alt="clock">
+                                                   <span>From</span>
+                                                   <span><b>08:00 AM</b></span>
+                                                   <span>To</span>
+                                                   <span><b>10:00 AM</b></span>
+                                                </div>
+                                                <div class="tools">
+                                                    <img src="./images/trash-event.svg" alt="trash-event" class="me-2">
+                                                    <img src="./images/edit.svg" alt="edit-event">
+                                                </div>
+                                            </div>
+                                            <p>Praesentium veritatis vel nulla deserunt molestias voluptatem nostrum sed aliquid. Nisi deleniti sit omnis libero.
+                                            </p>
+                                        </div>
+                                        <div class="box-event-new">
+                                            <div class="d-flex align-items-center justify-content-between box-event-flex">
+                                                <div class="align-element">
+                                                   <img src="/images/clock.svg" alt="clock">
+                                                   <span>From</span>
+                                                   <span><b>08:00 AM</b></span>
+                                                   <span>To</span>
+                                                   <span><b>10:00 AM</b></span>
+                                                </div>
+                                                <div class="tools">
+                                                    <img src="./images/trash-event.svg" alt="trash-event" class="me-2">
+                                                    <img src="./images/edit.svg" alt="edit-event">
+                                                </div>
+                                            </div>
+                                            <p>Praesentium veritatis vel nulla deserunt molestias voluptatem nostrum sed aliquid. Nisi deleniti sit omnis libero.
+                                            </p>
+                                        </div>
+                                        <div class="box-event-new">
+                                            <div class="d-flex align-items-center justify-content-between box-event-flex">
+                                                <div class="align-element">
+                                                   <img src="/images/clock.svg" alt="clock">
+                                                   <span>From</span>
+                                                   <span><b>08:00 AM</b></span>
+                                                   <span>To</span>
+                                                   <span><b>10:00 AM</b></span>
+                                                </div>
+                                                <div class="tools">
+                                                    <img src="./images/trash-event.svg" alt="trash-event" class="me-2">
+                                                    <img src="./images/edit.svg" alt="edit-event">
+                                                </div>
+                                            </div>
+                                            <p>Praesentium veritatis vel nulla deserunt molestias voluptatem nostrum sed aliquid. Nisi deleniti sit omnis libero.
+                                            </p>
+                                        </div>
+                                        <div class="box-event-new">
+                                            <div class="d-flex align-items-center justify-content-between box-event-flex">
+                                                <div class="align-element">
+                                                   <img src="/images/clock.svg" alt="clock">
+                                                   <span>From</span>
+                                                   <span><b>08:00 AM</b></span>
+                                                   <span>To</span>
+                                                   <span><b>10:00 AM</b></span>
+                                                </div>
+                                                <div class="tools">
+                                                    <img src="./images/trash-event.svg" alt="trash-event" class="me-2">
+                                                    <img src="./images/edit.svg" alt="edit-event">
+                                                </div>
+                                            </div>
+                                            <p>Praesentium veritatis vel nulla deserunt molestias voluptatem nostrum sed aliquid. Nisi deleniti sit omnis libero.
+                                            </p>
+                                        </div>
+                                        <div class="box-event-new">
+                                            <div class="d-flex align-items-center justify-content-between box-event-flex">
+                                                <div class="align-element">
+                                                   <img src="/images/clock.svg" alt="clock">
+                                                   <span>From</span>
+                                                   <span><b>08:00 AM</b></span>
+                                                   <span>To</span>
+                                                   <span><b>10:00 AM</b></span>
+                                                </div>
+                                                <div class="tools">
+                                                    <img src="./images/trash-event.svg" alt="trash-event" class="me-2">
+                                                    <img src="./images/edit.svg" alt="edit-event">
+                                                </div>
+                                            </div>
+                                            <p>Praesentium veritatis vel nulla deserunt molestias voluptatem nostrum sed aliquid. Nisi deleniti sit omnis libero.
+                                            </p>
+                                        </div>
+                                        <div class="box-event-new">
+                                            <div class="d-flex align-items-center justify-content-between box-event-flex">
+                                                <div class="align-element">
+                                                   <img src="/images/clock.svg" alt="clock">
+                                                   <span>From</span>
+                                                   <span><b>08:00 AM</b></span>
+                                                   <span>To</span>
+                                                   <span><b>10:00 AM</b></span>
+                                                </div>
+                                                <div class="tools">
+                                                    <img src="./images/trash-event.svg" alt="trash-event" class="me-2">
+                                                    <img src="./images/edit.svg" alt="edit-event">
+                                                </div>
+                                            </div>
+                                            <p>Praesentium veritatis vel nulla deserunt molestias voluptatem nostrum sed aliquid. Nisi deleniti sit omnis libero.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2>Speakers :</h2>
+                            <div class="row align-items-center border-bottom pb-3">
+                                <div class="col-md-5">
+                                    <form action="" class="form-Event-schedule">
+                                    <div class='file file--upload'>
+                                        <label for='input-file'>
+                                            <img src="../images/uploadImage.svg" alt="uploadImage" >
+                                            <div>
+                                                <p>Upload a profile Image</p> 
+                                                <span>PNG or JPG</span>
+                                            </div>
+                                        </label>
+                                        <input id='input-file' type='file' />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fullName">Full name</label>
+                                        <div class="box-input">
+                                            <input type="text" id="fullName" name="fullName" class="form-control">
+                                            <img src="./images/userInfo.svg" alt="location-event">
+                                        </div>
+                                    </div> 
+                                    <div class="form-group">
+                                        <label for="jurisdiction">Jurisdiction</label>
+                                        <input type="text" id="jurisdiction" name="jurisdiction" class="form-control input-event">
+                                    </div> 
+                                     <div class="form-group">
+                                         <button class="btn-send">Add</button>
+                                     </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-7" id="boxs-events">
+                                    <div class="box-speakers">
+                                        <div class="d-flex align-items-center box-speakers-flex">
+                                            <img src="./images/employee.png" alt="user" class="img-user">
+                                            <div class="box-speakers-text">
+                                                <h6>Debbie Kerluke</h6>
+                                                <p>Corporate Interactions Officer</p>
+                                            </div>
+                                        </div>
+                                        <div class="tools">
+                                            <img src="./images/trash-event.svg" alt="trash-event" class="me-2">
+                                            <img src="./images/edit.svg" alt="edit-event">
+                                        </div>
+                                    </div>
+                                    <div class="box-speakers">
+                                        <div class="d-flex align-items-center box-speakers-flex">
+                                            <img src="./images/emp1.svg" alt="user" class="img-user">
+                                            <div class="box-speakers-text">
+                                                <h6>Debbie Kerluke</h6>
+                                                <p>Corporate Interactions Officer</p>
+                                            </div>
+                                        </div>
+                                        <div class="tools">
+                                            <img src="./images/trash-event.svg" alt="trash-event" class="me-2">
+                                            <img src="./images/edit.svg" alt="edit-event">
+                                        </div>
+                                    </div>
+                                    <div class="box-speakers">
+                                        <div class="d-flex align-items-center box-speakers-flex">
+                                            <img src="./images/emp2.svg" alt="user" class="img-user">
+                                            <div class="box-speakers-text">
+                                                <h6>Debbie Kerluke</h6>
+                                                <p>Corporate Interactions Officer</p>
+                                            </div>
+                                        </div>
+                                        <div class="tools">
+                                            <img src="./images/trash-event.svg" alt="trash-event" class="me-2">
+                                            <img src="./images/edit.svg" alt="edit-event">
+                                        </div>
+                                    </div>
+                                    <div class="box-speakers">
+                                        <div class="d-flex align-items-center box-speakers-flex">
+                                            <img src="./images/employee.png" alt="user" class="img-user">
+                                            <div class="box-speakers-text">
+                                                <h6>Debbie Kerluke</h6>
+                                                <p>Corporate Interactions Officer</p>
+                                            </div>
+                                        </div>
+                                        <div class="tools">
+                                            <img src="./images/trash-event.svg" alt="trash-event" class="me-2">
+                                            <img src="./images/edit.svg" alt="edit-event">
+                                        </div>
+                                    </div>
+                                    <div class="box-speakers">
+                                        <div class="d-flex align-items-center box-speakers-flex">
+                                            <img src="./images/emp1.svg" alt="user" class="img-user">
+                                            <div class="box-speakers-text">
+                                                <h6>Debbie Kerluke</h6>
+                                                <p>Corporate Interactions Officer</p>
+                                            </div>
+                                        </div>
+                                        <div class="tools">
+                                            <img src="./images/trash-event.svg" alt="trash-event" class="me-2">
+                                            <img src="./images/edit.svg" alt="edit-event">
+                                        </div>
+                                    </div>
+                                    <div class="box-speakers">
+                                        <div class="d-flex align-items-center box-speakers-flex">
+                                            <img src="./images/emp2.svg" alt="user" class="img-user">
+                                            <div class="box-speakers-text">
+                                                <h6>Debbie Kerluke</h6>
+                                                <p>Corporate Interactions Officer</p>
+                                            </div>
+                                        </div>
+                                        <div class="tools">
+                                            <img src="./images/trash-event.svg" alt="trash-event" class="me-2">
+                                            <img src="./images/edit.svg" alt="edit-event">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="mb-5">Sponsors :</h2>
+                            <div class="row  border-bottom pb-3">
+                                <div class="col-md-1">
+                                    <div class="box-sponsors">
+                                        <i class="fal fa-times"></i>
+                                        <img src="./images/Sponsors1.png" alt="sponsor" class="img-sponsor">    
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="box-sponsors">
+                                        <i class="fal fa-times"></i>
+                                        <img src="./images/Sponsors2.png" alt="sponsor" class="img-sponsor">    
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="box-sponsors">
+                                        <i class="fal fa-times"></i>
+                                        <img src="./images/Sponsors1.png" alt="sponsor" class="img-sponsor">    
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="box-sponsors">
+                                        <i class="fal fa-times"></i>
+                                        <img src="./images/Sponsors2.png" alt="sponsor" class="img-sponsor">    
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="mb-3">Event Color :</h2>
+                            <div class="btns-colors">
+                                <button class="colorBtn1"><i class="fal fa-check"></i></button>
+                                <button class="colorBtn2"></button>
+                                <button class="colorBtn3"></button>
+                                <button class="colorBtn4"></button>
+                                <button class="colorBtn5"></button>
+                            </div>
+                            <button class="btn-send btn-next">Next</button>
+                    </div>
+                </div>
+            </section>
+            
+         </main>
+   </div>
+
+</div>
+
+
+      <!-- Modal Delete -->
+      <div class="modal fade modal-delete" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body pt-0">
+               <img src="./images/Delete.gif" alt="Delete">
+               <h5>Delete</h5>
+               <p>Are you sure to delete the volunteer?</p>
+            </div>
+            <div class="modal-footer justify-content-center pt-0">
+               <button type="button" class="btn-delete" data-bs-dismiss="modal">Delete</button>
+               <button type="button"  class="btn-hide" data-bs-dismiss="modal">Cancel</button>
+               </div>
+         
+         </div>
+         </div>
+      </div>
+   
+
+    <!-- Font Awesome Light JS  5.12-->
+    <script src="../icons/all.min.js"></script>
+    <script src="../icons/light.min.js"></script>
+   <!---Language Picker JS-->
+   <script src="../js/dropdown_lang.js"></script>
+   <!---Close and Open Sidebar in mobile-->
+   <script src="./js/sidebar.js"></script>
+   <!---Boostrap  5 JS-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   <!---Tabs JS--->
+   <script src="./js/tabs.js"></script>
+   <!---Filter View JS--->
+   <script src="./js/filterView.js"> </script>
+</body>     
+</html>
