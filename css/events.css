@@ -408,3 +408,92 @@ transform: scale(1.2);
     line-height: 22px;
     color: rgba(0, 0, 0, 0.5);
 }
+.section-view-event .view-event .h-head{
+    font-family: 'Dubai Medium';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.section-view-event .view-event .box-event-details{
+    background: rgba(217, 217, 217, 0.1);
+    border: 0.5px solid #AEAEAE;
+    border-radius: 5px;
+    min-height:98px;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.section-view-event .view-event .box-event-details p{
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0px;
+}
+.section-view-event .view-event .box-speakers-details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.section-view-event .view-event .box-speakers-details img{
+    border-radius: 5px;
+    width: 77px;
+    height: 67px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.section-view-event .view-event .box-speakers-details 
+.box-speakers-text h5{
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 10px; 
+}
+.section-view-event .view-event .box-speakers-details 
+.box-speakers-text p{
+    font-family: 'Dubai';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: #757575;
+    margin-bottom: 0px;
+}
+.section-view-event .view-event .img-sponsor img{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+}
+.height-boxs-event
+{
+	height: 30vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.height-boxs-event::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.height-boxs-event::-webkit-scrollbar
+{
+	width:5px;
+	background-color: #F5F5F5;
+}
+
+.height-boxs-event::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(182, 137, 52);
+}
